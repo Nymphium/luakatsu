@@ -23,7 +23,9 @@ table
 ### profile
 
 ```lua
-print(Aikatsu.ichigo) ---> 星宮 いちご
+print(Aikatsu.ichigo.name) ---> 星宮 いちご
+
+print(table.concat(Aikastu.ichigo.signature_songs), ", ") ---> 輝きのエチュード, Growing for a dream, Dance in the rain
 
 Aikatsu.ichigo()
 
@@ -39,8 +41,6 @@ sing	霧島 若歌
 belonging_to	Soleil,STAR☆ANIS,2wingS
 school	スターライト学園
 --]]
-
-print(table.concat(Aikastu.ichigo.signature_songs), ", ") ---> 輝きのエチュード, Growing for a dream, Dance in the rain
 ```
 
 ### one-liner
