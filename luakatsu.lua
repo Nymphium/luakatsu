@@ -1,17 +1,30 @@
-function idols(school)
-	local t = {}
+local char_setmeta = require "luakatsu.bin.char_setmeta"
 
-	for _, i in pairs(school) do
-		if type(i) == "table" then
-			table.insert(t, i["name"])
-		end
+local idols = char_setmeta(require("luakatsu.character.idols"))
+local others = char_setmeta(require("luakatsu.character.others"))
+
+local t = {idols = idols, others = others}
+
+local main_characters = {}
+
+for _, h in pairs(t) do
+	for _, i in pairs(h) do
+		table.insert(main_characters, i)
 	end
-
-	setmetatable(t, {__call = function() for _, i in pairs(t) do print(i) end end})
-
-	return t
 end
 
-StarLight = require "starLight"
-DreamAcademy = require "dreamAcademy"
+local _M = getmetatable(idols).__index
+local m2 = getmetatable(others).__index
+
+for key, i in pairs(m2) do
+	table.insert(_M, i)
+
+	_M[key] = i
+end
+
+_M.which_school = (require("luakatsu.bin.which_school"))(main_characters)
+_M.idols = idols
+_M.others = others
+
+Aikatsu = setmetatable(main_characters, {__index = _M, __call = function() print("私のアツいアイドル活動､アイカツ! 始まります! ﾌﾌｯﾋ") end})
 
