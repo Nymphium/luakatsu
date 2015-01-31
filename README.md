@@ -49,3 +49,6 @@ $ lua -luakatsu -e "print(Aikatsu())"
 私のアツいアイドル活動､アイカツ! 始まります! ﾌﾌｯﾋ
 ```
 
+## License
+MIT License
+

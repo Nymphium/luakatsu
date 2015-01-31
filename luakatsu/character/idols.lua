@@ -46,7 +46,6 @@ return {
 		zodiac_sign = "Capricorn",
 		blood_type = "A",
 		favorite_brand = "FUTURING GIRL",
-		signature_songs ={},
 		belonging_to = {"ぽわぽわプリリン"},
 		school = "スターライト学園",
 	},
@@ -98,7 +97,6 @@ return {
 		zodiac_sign = "Sagittarius",
 		blood_type = "O",
 		favorite_brand = "MAGICAL TOY",
-		signature_songs = {},
 		sing = "市倉 有菜",
 		belonging_to = {"Tristar", "STAR☆ANIS"},
 		school = "スターライト学園"
@@ -148,7 +146,6 @@ return {
 		zodiac_sign = "Gemini",
 		blood_type = "B",
 		favorite_brand = "ViVid Kiss",
-		signature_songs = {},
 		sing = "みき",
 		belonging_to = {"GOGO! いちご応援隊"},
 		school = "スターライト学園"
@@ -163,7 +160,6 @@ return {
 		favorite_brand = "Sangria Rosa",
 		signature_songs = {"Passion Flower"},
 		sing = "みほ",
-		belonging_to = {},
 		school = "スターライト学園"
 	},
 
@@ -176,7 +172,6 @@ return {
 		zodiac_sign = "Scorpio",
 		blood_type = "A",
 		favorite_brand = "Swing ROCK",
-		signature_songs = {},
 		sing = "上花 風裏",
 		belonging_to = {"2wingS"},
 		school = "ドリーム・アカデミー"
@@ -191,7 +186,6 @@ return {
 		favorite_brand = "MAGICAL TOY",
 		signature_songs = {"マジカルタイム"},
 		sing = "市倉 有菜",
-		belonging_to = {},
 		school = "ドリーム・アカデミー"
 	},
 	{
@@ -204,7 +198,6 @@ return {
 		favorite_brand = "Bohemian Sky",
 		signature_songs = {"Kira･pata･shining"},
 		sing = "愛野 えり",
-		belonging_to = {},
 		school = "ドリーム・アカデミー",
 		pet = "パーム"
 	},
@@ -218,7 +211,6 @@ return {
 		favorite_brand = "Aurora Fantasy",
 		signature_songs = {"オーロラプリンセス"},
 		sing = "愛野 えり",
-		belonging_to = {},
 		school = "ドリーム・アカデミー",
 		pet = "エリザベス三世"
 	},
