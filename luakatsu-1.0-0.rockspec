@@ -1,7 +1,7 @@
 package = "luakatsu"
 version = "1.0-0"
 source = {
-	url = "https://github.com/Nymphium/luakatsu"
+	url = "git://github.com/Nymphium/luakatsu"
 }
 description = {
 	summary = "Aikatsu! --- Idol KATSUDOU, with Lua",
