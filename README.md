@@ -19,8 +19,6 @@ cd luakatsu
 luarocks --local make
 ```
 
-Later is better (it's hard to understand LuaRocks...).
-
 
 ## usage
 ```
