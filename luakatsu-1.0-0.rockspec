@@ -4,7 +4,7 @@ source = {
 	url = "https://github.com/Nymphium/luakatsu"
 }
 description = {
-	summary = "\"Aikatsu! ~ idol katsudou\" ~ with lua",
+	summary = "Aikatsu! --- Idol KATSUDOU, with Lua",
 	detailed = [[
 	Let's Aikatsu! with Lua!!
 	]],
