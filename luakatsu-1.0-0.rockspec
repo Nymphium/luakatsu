@@ -8,7 +8,7 @@ description = {
 	detailed = [[
 	Let's Aikatsu! with Lua!!
 	]],
-	homepage = source.url,
+	homepage = "https://github.com/Nymphium/luakatsu",
 	license = "MIT",
 	maintainer = "Nymphium"
 }
