@@ -1,14 +1,14 @@
 package = "luakatsu"
 version = "1.0-0"
 source = {
-	url = "https://github.com/Nymphium/luakatsu"
+	url = "git://github.com/Nymphium/luakatsu"
 }
 description = {
-	summary = "\"Aikatsu! ~ idol katsudou\" ~ with lua",
+	summary = "Aikatsu! --- Idol KATSUDOU, with Lua",
 	detailed = [[
 	Let's Aikatsu! with Lua!!
 	]],
-	homepage = source.url,
+	homepage = "https://github.com/Nymphium/luakatsu",
 	license = "MIT",
 	maintainer = "Nymphium"
 }
