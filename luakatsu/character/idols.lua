@@ -224,7 +224,7 @@ return {
 		zodiac_sign = "Virgo",
 		blood_type = "A",
 		favorite_brand = "LOVE MOONRISE",
-		signature_songs = {"Nove on now!", "Moonlight destiny", "Precious"},
+		signature_songs = {"Move on now!", "Moonlight destiny", "Precious"},
 		sing = "ささかま リス子",
 		belonging_to = {"Tristar", "STAR☆ANIS", "WM"},
 	},
