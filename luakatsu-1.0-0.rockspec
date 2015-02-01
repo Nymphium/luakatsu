@@ -9,7 +9,8 @@ description = {
 	Let's Aikatsu! with Lua!!
 	]],
 	homepage = source.url,
-	license = "MIT"
+	license = "MIT",
+	maintainer = "Nymphium"
 }
 dependencies = {
 	"lua ~> 5.2"
