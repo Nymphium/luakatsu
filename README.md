@@ -9,6 +9,9 @@
  └────luakatsu/
 ```
 
+## install
+`luarocks --local --from=https://github.com/Nymphium/luarocks/raw/master install luakatsu`
+
 
 ## usage
 
