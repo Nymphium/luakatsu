@@ -1,7 +1,7 @@
 local char_setmeta = require "luakatsu.bin.char_setmeta"
 
-local idols = char_setmeta(require("luakatsu.character.idols"))
-local others = char_setmeta(require("luakatsu.character.others"))
+local idols = char_setmeta(require("luakatsu.lib.characters.idols"))
+local others = char_setmeta(require("luakatsu.lib.characters.others"))
 
 local t = {idols = idols, others = others}
 

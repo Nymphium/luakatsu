@@ -1,5 +1,5 @@
 package = "luakatsu"
-version = "1.0-0"
+version = "1.0-1"
 source = {
 	url = "git://github.com/Nymphium/luakatsu"
 }
@@ -22,8 +22,8 @@ build = {
 		uakatsu = "uakatsu.lua",
 		['luakatsu.bin.char_setmeta'] = "luakatsu/bin/char_setmeta.lua",
 		['luakatsu.bin.which_school'] = "luakatsu/bin/which_school.lua",
-		['luakatsu.character.idols'] = "luakatsu/character/idols.lua",
-		['luakatsu.character.others'] = "luakatsu/character/others.lua",
+		['luakatsu.lib.characters.idols'] = "luakatsu/lib/characters/idols.lua",
+		['luakatsu.lib.characters.others'] = "luakatsu/lib/characters/others.lua",
 	}
 }
 

@@ -1,13 +1,6 @@
 # luakatsu (Lua + Aikastu)
 [rubicure](https://github.com/sue445/rubicure) is **Ruby + Precure**, it is **Lua + [Aikastu](http://aikatsu.wikia.com/wiki/Aikatsu_Wiki)**
 
-```
-/path/to/LUA_PATH
- ├────luakatsu.lua
- ├────uakatsu.lua
- └────luakatsu/
-```
-
 ## install
 `luarocks --local --from=https://github.com/Nymphium/luarocks/raw/master install luakatsu`
 
@@ -18,8 +11,6 @@ git clone https://github.com/Nymphium/luakatsu
 cd luakatsu
 luarocks --local make
 ```
-
-Later is better (it's hard to understand LuaRocks...).
 
 
 ## usage
