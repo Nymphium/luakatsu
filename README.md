@@ -29,7 +29,7 @@ print(Aikatsu.Ichigo.name) ---> 星宮 いちご
 
 print(table.concat(Aikastu.Ichigo.signature_songs), ", ") ---> 輝きのエチュード, Growing for a dream, Dance in the rain
 
-Aikatsu.ichigo()
+Aikatsu.Ichigo()
 
 --[[
 name	星宮 いちご
