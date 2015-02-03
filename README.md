@@ -13,7 +13,14 @@ luarocks --local make
 ```
 
 latest(unsafe)
-`luarocks --local --from=https://github.com/Nymphium/luakatsu/raw/dev/ install luakatsu`
+`luarocks --local --from=https://github.com/Nymphium/luakatsu/raw/dev install luakatsu`
+
+### each versions
+`luarocks --local --from=https://github.com/Nymphium/luakatsu/raw/*VERSION* install luakatsu`
+
+#### example(v1.0-0)
+
+`luarocks --local --from=https://github.com/Nymphium/luakatsu/raw/v1.0-0 install luakatsu`
 
 
 ## usage
@@ -23,6 +30,8 @@ $ lua
 > require "luakatsu"
 > print(type(Aikatsu))
 table
+> print(Aikatsu.version)
+v1.0-1
 ```
 
 ### profile

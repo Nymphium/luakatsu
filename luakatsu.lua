@@ -29,6 +29,7 @@ _M.others = others
 Aikatsu = setmetatable(main_characters, {__index = _M, __call = function() print("私のアツいアイドル活動､アイカツ! 始まります! ﾌﾌｯﾋ") end})
 
 Aikatsu.groups = require("luakatsu.lib.groups.groups")
+Aikatsu.version = "v1.0-1"
 
 idols = nil
 others = nil
