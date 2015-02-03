@@ -23,12 +23,12 @@ return function(t)
 		t[i].name_rm = nil
 		-- table.insert(ret, setmetatable(j, {__call = prof(j)}))
 		table.insert(ret, setmetatable(j, {__call = function()
-			for k, l in pairs(j) do
-				if type(l) == "table" then
-					l = table.concat(l, ", ")
+			for key, val in pairs(j) do
+				if type(val) == "table" then
+					val = table.concat(val, ", ")
 				end
-				if k and l then
-					print(k, l)
+				if key and val then
+					print(key, val)
 				end
 			end
 		end}))

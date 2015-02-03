@@ -15,7 +15,7 @@ return {
 		signature_songs = {"輝きのエチュード", "Growing for a dream", "Dance in the rain"},
 		sing = "霧島 若歌",
 		belonging_to = {"Soleil", "STAR☆ANIS", "2wingS"},
-		school = "スターライト学園"
+		school = "スターライト学園",
 	},
 	{
 		name = "霧矢 あおい",
@@ -29,7 +29,8 @@ return {
 		signature_songs = {"prism spiral", "Stranger alien"},
 		sing = "上花 風裏",
 		belonging_to = {"Soleil", "STAR☆ANIS"},
-		school = "スターライト学園"
+		school = "スターライト学園",
+		catchphrase = "穏やかじゃない"
 	},
 	{
 		name = "紫吹 蘭",
@@ -43,7 +44,7 @@ return {
 		signature_songs = {"Trap of Love"},
 		sing = "市倉 有菜",
 		belonging_to = {"Soleil", "Tristar", "STAR☆ANIS"},
-		school = "スターライト学園"
+		school = "スターライト学園",
 	},
 	{
 		name = "神谷 しおん",
@@ -69,7 +70,8 @@ return {
 		signature_songs = {"Angel Snow", "放課後ポニーテール", "CHU-CHU RAINBOW"},
 		sing = "美谷 玲美",
 		belonging_to = {"ぽわぽわプリリン", "STAR☆ANIS"},
-		school = "スターライト学園"
+		school = "スターライト学園",
+		catchphrase = "らぶゆ〜♡ "
 	},
 	{
 		name = "藤堂 ユリカ",
@@ -83,7 +85,8 @@ return {
 		signature_songs = {"硝子ドール", "永遠の灯"},
 		sing = "美谷 玲美",
 		belonging_to = {"Tristar", "STAR☆ANIS"},
-		school = "スターライト学園"
+		school = "スターライト学園",
+		catchphrase = "血を吸うわよ"
 	},
 	{
 		name = "北大路 さくら",
@@ -123,7 +126,8 @@ return {
 		favorite_brand = "SPICY AGEHA",
 		type = sexy,
 		sing = "森下 ゆにこ",
-		school = "スターライト学園"
+		school = "スターライト学園",
+		catchphrase = "まぶしっ"
 	},
 	{
 		name = "大空 あかり",
@@ -164,7 +168,8 @@ return {
 		type = pop,
 		sing = "みき",
 		belonging_to = {"GOGO! いちご応援隊"},
-		school = "スターライト学園"
+		school = "スターライト学園",
+		catchphrase = "おつかー!"
 	},
 	{
 		name = "紅林 珠璃",
@@ -177,7 +182,8 @@ return {
 		type = sexy,
 		signature_songs = {"Passion Flower"},
 		sing = "みほ",
-		school = "スターライト学園"
+		school = "スターライト学園",
+		catchphrase = "私を見て"
 	},
 
 	-- Dream Academy
@@ -192,7 +198,8 @@ return {
 		type = cool,
 		sing = "上花 風裏",
 		belonging_to = {"2wingS"},
-		school = "ドリーム・アカデミー"
+		school = "ドリーム・アカデミー",
+		catchphrase = "ラララー"
 	},
 	{
 		name = "冴草 きい",
@@ -205,7 +212,8 @@ return {
 		type = pop,
 		signature_songs = {"マジカルタイム"},
 		sing = "市倉 有菜",
-		school = "ドリーム・アカデミー"
+		school = "ドリーム・アカデミー",
+		catchphrase = "オケオケオッケー"
 	},
 	{
 		name = "風沢 そら",
@@ -219,7 +227,8 @@ return {
 		signature_songs = {"Kira･pata･shining"},
 		sing = "愛野 えり",
 		school = "ドリーム・アカデミー",
-		pet = "パーム"
+		pet = "パーム",
+		catchphrase = "クルクルキャワワ"
 	},
 	{
 		name = "姫里 マリア",
@@ -233,7 +242,8 @@ return {
 		signature_songs = {"オーロラプリンセス"},
 		sing = "愛野 えり",
 		school = "ドリーム・アカデミー",
-		pet = "エリザベス三世"
+		pet = "エリザベス三世",
+		catchphrase = "ぱんぱかぱーん"
 	},
 
 	-- other

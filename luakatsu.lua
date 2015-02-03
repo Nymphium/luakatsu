@@ -1,7 +1,7 @@
 local char_setmeta = require "luakatsu.bin.char_setmeta"
 
-local idols = char_setmeta(require("luakatsu.lib.characters.idols"))
-local others = char_setmeta(require("luakatsu.lib.characters.others"))
+idols = char_setmeta(require("luakatsu.lib.characters.idols"))
+others = char_setmeta(require("luakatsu.lib.characters.others"))
 
 local t = {idols = idols, others = others}
 
@@ -27,4 +27,9 @@ _M.idols = idols
 _M.others = others
 
 Aikatsu = setmetatable(main_characters, {__index = _M, __call = function() print("私のアツいアイドル活動､アイカツ! 始まります! ﾌﾌｯﾋ") end})
+
+Aikatsu.groups = require("luakatsu.lib.groups.groups")
+
+idols = nil
+others = nil
 
