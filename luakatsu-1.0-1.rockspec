@@ -25,6 +25,7 @@ build = {
 		['luakatsu.bin.which_school'] = "luakatsu/bin/which_school.lua",
 		['luakatsu.lib.characters.idols'] = "luakatsu/lib/characters/idols.lua",
 		['luakatsu.lib.characters.others'] = "luakatsu/lib/characters/others.lua",
+		['luakatsu.lib.groups.groups'] = "luakatsu/lib/groups/groups.lua",
 	}
 }
 

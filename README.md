@@ -1,5 +1,5 @@
 # luakatsu (Lua + Aikastu)
-[rubicure](https://github.com/sue445/rubicure) is **Ruby + Precure**, it is **Lua + [Aikastu](http://aikatsu.wikia.com/wiki/Aikatsu_Wiki)**
+[Rubicure](https://github.com/sue445/rubicure) is **Ruby + Precure**, it is **Lua + [Aikastu](http://aikatsu.wikia.com/wiki/Aikatsu_Wiki)**
 
 ## install
 `luarocks --local --from=https://github.com/Nymphium/luakatsu/raw/master/ install luakatsu`
