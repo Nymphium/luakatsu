@@ -30,7 +30,7 @@ return {
 		sing = "上花 風裏",
 		belonging_to = {"Soleil", "STAR☆ANIS"},
 		school = "スターライト学園",
-		catchphrase = "穏やかじゃない"
+		catchphrase = "穏やかじゃない!"
 	},
 	{
 		name = "紫吹 蘭",
@@ -71,7 +71,7 @@ return {
 		sing = "美谷 玲美",
 		belonging_to = {"ぽわぽわプリリン", "STAR☆ANIS"},
 		school = "スターライト学園",
-		catchphrase = "らぶゆ〜♡ "
+		catchphrase = "らぶゆ〜♡"
 	},
 	{
 		name = "藤堂 ユリカ",
@@ -86,7 +86,7 @@ return {
 		sing = "美谷 玲美",
 		belonging_to = {"Tristar", "STAR☆ANIS"},
 		school = "スターライト学園",
-		catchphrase = "血を吸うわよ"
+		catchphrase = "血を吸うわよ!"
 	},
 	{
 		name = "北大路 さくら",
@@ -127,7 +127,7 @@ return {
 		type = sexy,
 		sing = "森下 ゆにこ",
 		school = "スターライト学園",
-		catchphrase = "まぶしっ"
+		catchphrase = "まぶしっ…"
 	},
 	{
 		name = "大空 あかり",
@@ -183,7 +183,7 @@ return {
 		signature_songs = {"Passion Flower"},
 		sing = "みほ",
 		school = "スターライト学園",
-		catchphrase = "私を見て"
+		catchphrase = "私を見て!"
 	},
 
 	-- Dream Academy
@@ -199,7 +199,7 @@ return {
 		sing = "上花 風裏",
 		belonging_to = {"2wingS"},
 		school = "ドリーム・アカデミー",
-		catchphrase = "ラララー"
+		catchphrase = "ラララーな感じだな｡"
 	},
 	{
 		name = "冴草 きい",
@@ -213,7 +213,7 @@ return {
 		signature_songs = {"マジカルタイム"},
 		sing = "市倉 有菜",
 		school = "ドリーム・アカデミー",
-		catchphrase = "オケオケオッケー"
+		catchphrase = "オケオケオッケー!"
 	},
 	{
 		name = "風沢 そら",
@@ -243,7 +243,7 @@ return {
 		sing = "愛野 えり",
 		school = "ドリーム・アカデミー",
 		pet = "エリザベス三世",
-		catchphrase = "ぱんぱかぱーん"
+		catchphrase = "ぱんぱかぱーん!"
 	},
 
 	-- other

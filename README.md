@@ -45,6 +45,10 @@ belonging_to	Soleil,STAR☆ANIS,2wingS
 school	スターライト学園
 --]]
 
+```
+
+### groups
+```lua
 Aikatsu.groups[1]()
 
 --[[
@@ -52,8 +56,11 @@ name	Soleil
 members	星宮 いちご, 霧矢 あおい, 紫吹 蘭
 songs	ダイヤモンドハッピー
 --]]
+```
 
-for _, i in pairs(Aikatsu) do
+### catchphrase
+```lua
+for _, i in pairs(Aikatsu.idols) do
 	local p = i.catchphrase
 
 	if p then print(p) end
