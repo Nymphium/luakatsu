@@ -44,12 +44,39 @@ sing	霧島 若歌
 belonging_to	Soleil,STAR☆ANIS,2wingS
 school	スターライト学園
 --]]
+
+Aikatsu.groups[1]()
+
+--[[
+name	Soleil
+members	星宮 いちご, 霧矢 あおい, 紫吹 蘭
+songs	ダイヤモンドハッピー
+--]]
+
+for _, i in pairs(Aikatsu) do
+	local p = i.catchphrase
+
+	if p then print(p) end
+end
+
+--[[
+穏やかじゃない
+らぶゆ〜♡ 
+血を吸うわよ
+まぶしっ
+おつかー!
+私を見て
+ラララー
+オケオケオッケー
+クルクルキャワワ
+ぱんぱかぱーん
+--]]
 ```
 
 
 ### one-liner
 ```sh
-$ lua -luakatsu -e "print(Aikatsu())"
+$ lua -luakatsu -e Aikatsu\(\)
 私のアツいアイドル活動､アイカツ! 始まります! ﾌﾌｯﾋ
 ```
 
