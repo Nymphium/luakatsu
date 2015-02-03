@@ -1,4 +1,4 @@
-# luakatsu (Lua + Aikastu)
+# luakatsu (Lua + Aikastu) v1.0-0
 [Rubicure](https://github.com/sue445/rubicure) is **Ruby + Precure**, it is **Lua + [Aikastu](http://aikatsu.wikia.com/wiki/Aikatsu_Wiki)**
 
 ```
@@ -19,6 +19,10 @@ cd luakatsu
 luarocks --local make
 ```
 
+or
+
+`luarocks --local --from=https://github.com/Nymphium/luakatsu/raw/v1.0-0 install luakatsu`
+
 
 ## usage
 ```
@@ -27,6 +31,8 @@ $ lua
 > require "luakatsu"
 > print(type(Aikatsu))
 table
+> = Aikatsu.version
+v1.0-0
 ```
 
 ### profile
@@ -55,7 +61,7 @@ school	スターライト学園
 
 ### one-liner
 ```sh
-$ lua -luakatsu -e "print(Aikatsu())"
+$ lua -luakatsu -e Aikatsu\(\)
 私のアツいアイドル活動､アイカツ! 始まります! ﾌﾌｯﾋ
 ```
 
