@@ -94,7 +94,7 @@ end
 
 
 ### one-liner
-```sh
+```
 $ lua -luakatsu -e Aikatsu\(\)
 私のアツいアイドル活動､アイカツ! 始まります! ﾌﾌｯﾋ
 ```
