@@ -22,7 +22,6 @@ for key, i in pairs(m2) do
 	_M[key] = i
 end
 
-_M.which_school = (require("luakatsu.bin.which_school"))(main_characters)
 _M.idols = idols
 _M.others = others
 

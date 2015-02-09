@@ -1,34 +1,24 @@
 return function(t)
 	local index = {}
+	local ret = {}
 
 	for _, i in pairs(t) do
 		index[i.name_rm] = i
+		i.name_rm = nil
 	end
 
-	-- local function prof(chara)
-		-- for i, j in pairs(chara) do
-			-- if type(j) == "table" then
-				-- j = table.concat(j, ", ")
-			-- end
-
-			-- if i and j then
-				-- print(i, j)
-			-- end
-		-- end
-	-- end
-
-	local ret = {}
-
-	for i, j in pairs(t) do
-		t[i].name_rm = nil
-		-- table.insert(ret, setmetatable(j, {__call = prof(j)}))
+	for _, j in pairs(t) do
 		table.insert(ret, setmetatable(j, {__call = function()
-			for k, l in pairs(j) do
-				if type(l) == "table" then
-					l = table.concat(l, ", ")
+			for _, l in pairs(j) do
+				key = l[1]
+				val = l[2]
+
+				if type(val) == "table" then
+					val = table.concat(val, ", ")
 				end
-				if k and l then
-					print(k, l)
+
+				if key and val then
+					print(key, val)
 				end
 			end
 		end}))

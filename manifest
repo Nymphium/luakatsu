@@ -2,7 +2,7 @@ commands = {}
 modules = {}
 repository = {
    luakatsu = {
-      ['1.0-0'] = {
+      ['1.1-0'] = {
          {
             arch = "rockspec"
          }
