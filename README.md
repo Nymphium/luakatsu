@@ -1,4 +1,4 @@
-# luakatsu (Lua + Aikastu)
+# luakatsu (Lua + Aikastu) v1.1-0
 [Rubicure](https://github.com/sue445/rubicure) is **Ruby + Precure**, it is **Lua + [Aikastu](http://aikatsu.wikia.com/wiki/Aikatsu_Wiki)**
 
 ## install
@@ -48,8 +48,8 @@ school	スターライト学園
 
 
 ### one-liner
-```sh
-$ lua -luakatsu -e "print(Aikatsu())"
+```
+$ lua -luakatsu -e Aikatsu\(\)
 私のアツいアイドル活動､アイカツ! 始まります! ﾌﾌｯﾋ
 ```
 
