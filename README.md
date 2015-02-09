@@ -1,13 +1,6 @@
 # luakatsu (Lua + Aikastu) v1.0-0
 [Rubicure](https://github.com/sue445/rubicure) is **Ruby + Precure**, it is **Lua + [Aikastu](http://aikatsu.wikia.com/wiki/Aikatsu_Wiki)**
 
-```
-/path/to/LUA_PATH
- ├────luakatsu.lua
- ├────uakatsu.lua
- └────luakatsu/
-```
-
 ## install
 `luarocks --local --from=https://github.com/Nymphium/luakatsu/raw/master install luakatsu`
 
