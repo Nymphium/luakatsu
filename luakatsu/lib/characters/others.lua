@@ -1,5 +1,5 @@
 local type
-local cute, cool, sexy = "pop", "Cute", "Cool", "Sexy", "Pop"
+local cute, cool, sexy, pop = "Cute", "Cool", "Sexy", "Pop"
 
 
 return setmetatable({

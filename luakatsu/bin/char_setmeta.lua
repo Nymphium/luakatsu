@@ -2,26 +2,47 @@ return function(t)
 	local index = {}
 	local ret = {}
 
-	for _, i in pairs(t) do
-		index[i.name_rm] = i
-		i.name_rm = nil
+	local function prof_iter(prof)
+		local pos = 0
+
+		return function()
+			pos = pos + 1
+
+			if not prof[pos] then return nil end
+
+			return prof[pos][1], prof[pos][2]
+		end
 	end
 
-	for _, j in pairs(t) do
-		table.insert(ret, setmetatable(j, {__call = function()
-			for _, l in pairs(j) do
-				key = l[1]
-				val = l[2]
-
-				if type(val) == "table" then
-					val = table.concat(val, ", ")
-				end
-
-				if key and val then
-					print(key, val)
-				end
+	local function printprof(prof)
+		for key, val in prof_iter(prof) do
+			if type(val) == "table" then
+				val = table.concat(val, ", ")
 			end
-		end}))
+
+			if key and val then
+				print(key, val)
+			end
+		end
+	end
+
+	local function mkprofmt(prof)
+		local mt = {}
+
+		for key, val in prof_iter(prof) do
+			mt[key] = val
+		end
+
+		return mt
+	end
+
+
+	for _, chara in pairs(t) do
+		index[chara.name_rm] = chara
+		chara.name_rm = nil
+		local index = mkprofmt(chara)
+
+		table.insert(ret, setmetatable(chara, {__index = index, __call = function() printprof(chara) end}))
 	end
 
 	return setmetatable(ret, {__index = index})
