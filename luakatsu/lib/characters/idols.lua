@@ -30,6 +30,7 @@ return setmetatable({
 		{"sing", "上花 風裏"},
 		{"belonging_to", {"Soleil", "STAR☆ANIS"}},
 		{"school", "スターライト学園"},
+		{"catchphrase", "穏やかじゃない!"}
 	},
 	{
 		{"name", "紫吹 蘭"},
@@ -70,6 +71,7 @@ return setmetatable({
 		{"sing", "美谷 玲美"},
 		{"belonging_to", {"ぽわぽわプリリン", "STAR☆ANIS"}},
 		{"school", "スターライト学園"},
+		{"catchphrase", "らぶゆ〜♡"}
 	},
 	{
 		{"name", "藤堂 ユリカ"},
@@ -84,6 +86,7 @@ return setmetatable({
 		{"sing", "美谷 玲美"},
 		{"belonging_to", {"Tristar", "STAR☆ANIS"}},
 		{"school", "スターライト学園"},
+		{"catchphrase", "血を吸うわよ!"}
 	},
 	{
 		{"name", "北大路 さくら"},
@@ -124,6 +127,7 @@ return setmetatable({
 		{"type", sexy},
 		{"sing", "森下 ゆにこ"},
 		{"school", "スターライト学園"},
+		{"catchphrase", "まぶしっ…"}
 	},
 	{
 		{"name", "大空 あかり"},
@@ -165,6 +169,7 @@ return setmetatable({
 		{"sing", "みき"},
 		{"belonging_to", {"GOGO! いちご応援隊"}},
 		{"school", "スターライト学園"},
+		{"catchphrase", "おつかー!"}
 	},
 	{
 		{"name", "紅林 珠璃"},
@@ -178,6 +183,7 @@ return setmetatable({
 		{"signature_songs", {"Passion Flower"}},
 		{"sing", "みほ"},
 		{"school", "スターライト学園"},
+		{"catchphrase", "私を見て!"}
 	},
 
 	-- Dream Academy
@@ -193,6 +199,7 @@ return setmetatable({
 		{"sing", "上花 風裏"},
 		{"belonging_to", {"2wingS"}},
 		{"school", "ドリーム・アカデミー"},
+		{"catchphrase", "ラララーな感じだな!"}
 	},
 	{
 		{"name", "冴草 きい"},
@@ -206,6 +213,7 @@ return setmetatable({
 		{"signature_songs", {"マジカルタイム"}},
 		{"sing", "市倉 有菜"},
 		{"school", "ドリーム・アカデミー"},
+		{"catchphrase", "オケオケオッケー!"}
 	},
 	{
 		{"name", "風沢 そら"},
@@ -220,6 +228,7 @@ return setmetatable({
 		{"sing", "愛野 えり"},
 		{"school", "ドリーム・アカデミー"},
 		{"pet", "パーム"},
+		{"catchphrase", "クルクルキャワワ"}
 	},
 	{
 		{"name", "姫里 マリア"},
@@ -234,6 +243,7 @@ return setmetatable({
 		{"sing", "愛野 えり"},
 		{"school", "ドリーム・アカデミー"},
 		{"pet", "エリザベス三世"},
+		{"catchphrase", "ぱんぱかぱーん!"}
 	},
 
 	-- other

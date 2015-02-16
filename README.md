@@ -1,4 +1,4 @@
-# luakatsu (Lua + Aikastu) v1.1-0
+# luakatsu (Lua + Aikastu) v1.2-0
 [Rubicure](https://github.com/sue445/rubicure) is **Ruby + Precure**, it is **Lua + [Aikastu](http://aikatsu.wikia.com/wiki/Aikatsu_Wiki)**
 
 ## install
@@ -31,7 +31,7 @@ $ lua
 > print(type(Aikatsu))
 table
 > print(Aikatsu.version)
-v1.0-1
+v1.2-0
 ```
 
 ### profile
@@ -72,7 +72,7 @@ songs	ダイヤモンドハッピー
 
 ### catchphrase
 ```lua
-for _, i in pairs(Aikatsu.idols) do
+for _, i in pairs(Aikatsu) do
 	local p = i.catchphrase
 
 	if p then print(p) end
