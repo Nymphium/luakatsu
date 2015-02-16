@@ -1,6 +1,3 @@
-local index = {}
-local ret = {}
-
 local prof_iter = function(prof)
 	local pos = 0
 
@@ -37,6 +34,9 @@ end
 
 
 return function(t)
+	local index = {}
+	local ret = {}
+
 	for _, chara in pairs(t) do
 		index[chara.name_rm] = chara
 		chara.name_rm = nil
