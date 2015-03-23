@@ -17,9 +17,6 @@ cd luakatsu
 luarocks --local make
 \`\`\`
 
-latest(unsafe)
-
-\`luarocks --local --from=https://github.com/Nymphium/luakatsu/raw/dev install luakatsu\`
 
 ### each versions
 \`luarocks --local --from=https://github.com/Nymphium/luakatsu/raw/*VERSION* install luakatsu\`
