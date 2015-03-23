@@ -13,7 +13,17 @@ end
 local printprof = function(prof)
 	for key, val in prof_iter(prof) do
 		if type(val) == "table" then
-			val = table.concat(val, ", ")
+			if type(val[1]) == "table" then
+				local t = {}
+
+				for _, name in pairs(val) do
+					table.insert(t, name.name)
+				end
+
+				val = table.concat(t, ", ")
+			else
+				val = table.concat(val, ", ")
+			end
 		end
 
 		if key and val then
@@ -40,9 +50,9 @@ return function(t)
 	for _, chara in pairs(t) do
 		index[chara.name_rm] = chara
 		chara.name_rm = nil
-		local index = mkprofmt(chara)
+		local each_index = mkprofmt(chara)
 
-		table.insert(ret, setmetatable(chara, {__index = index, __call = function() printprof(chara) end}))
+		table.insert(ret, setmetatable(chara, {__index = each_index, __call = function() printprof(chara) end}))
 	end
 
 	return setmetatable(ret, {__index = index})

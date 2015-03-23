@@ -1,0 +1,82 @@
+#!/bin/bash
+
+ver=$(lua -luakatsu -e print\(Aikatsu.version\))
+
+cat <<EOF > README.md
+# luakatsu (Lua + Aikastu) "${ver}"
+[Rubicure](https://github.com/sue445/rubicure) is **Ruby + Precure**, it is **Lua + [Aikastu](http://aikatsu.wikia.com/wiki/Aikatsu_Wiki)**
+
+## install
+\`luarocks --local --from=https://github.com/Nymphium/luakatsu/raw/master/ install luakatsu\`
+
+or
+
+\`\`\`sh
+git clone https://github.com/Nymphium/luakatsu
+cd luakatsu
+luarocks --local make
+\`\`\`
+
+latest(unsafe)
+\`luarocks --local --from=https://github.com/Nymphium/luakatsu/raw/dev install luakatsu\`
+
+### each versions
+\`luarocks --local --from=https://github.com/Nymphium/luakatsu/raw/*VERSION* install luakatsu\`
+
+#### example(v1.0-0)
+
+\`luarocks --local --from=https://github.com/Nymphium/luakatsu/raw/v1.0-0 install luakatsu\`
+
+
+## compatibility
+after v1.3, non-idol characters' data is nothing here.
+and catchphrase is not supported.
+
+## usage
+\`\`\`
+$ lua
+
+> require "luakatsu"
+> print(type(Aikatsu))
+table
+> print(Aikatsu.version)
+"${ver}"
+\`\`\`
+
+### profile
+
+\`\`\`lua
+print(Aikatsu.Ichigo.name) ---> 星宮 いちご
+
+print(table.concat(Aikastu.Ichigo.signature_songs), ", ") ---> $(lua -luakatsu -e "print(table.concat(Aikatsu.Ichigo.signature_songs, \", \"))")
+
+Aikatsu.Ichigo()
+
+--[[
+$(lua -luakatsu -e Aikatsu.Ichigo\(\))
+--]]
+
+\`\`\`
+
+### groups
+\`\`\`lua
+Aikatsu.groups.Soleil()
+
+--[[
+$(lua -luakatsu -e "Aikatsu.groups.Soleil()")
+--]]
+\`\`\`
+
+
+### one-liner
+\`\`\`
+$ lua -luakatsu -e Aikatsu\(\)
+$(lua -luakatsu -e Aikatsu\(\))
+\`\`\`
+
+
+## License
+MIT License
+
+EOF
+

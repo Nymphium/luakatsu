@@ -1,4 +1,4 @@
-# luakatsu (Lua + Aikastu) "v1.3-1"
+# luakatsu (Lua + Aikastu) v1.3-1
 [Rubicure](https://github.com/sue445/rubicure) is **Ruby + Precure**, it is **Lua + [Aikastu](http://aikatsu.wikia.com/wiki/Aikatsu_Wiki)**
 
 ## install
@@ -35,7 +35,7 @@ $ lua
 > print(type(Aikatsu))
 table
 > print(Aikatsu.version)
-"v1.3-1"
+v1.3-0
 ```
 
 ### profile
@@ -43,7 +43,7 @@ table
 ```lua
 print(Aikatsu.Ichigo.name) ---> 星宮 いちご
 
-print(table.concat(Aikastu.Ichigo.signature_songs), ", ") ---> 輝きのエチュード, Growing for a dream, Dance in the rain
+print(table.concat(Aikastu.Ichigo.signature_songs), ", ") ---> 輝きのエチュードGrowing for a dreamDance in the rain	, 
 
 Aikatsu.Ichigo()
 
@@ -55,9 +55,9 @@ zodiac_sign	Picces
 blood_type	O
 favorite_brand	Angely Sugar
 type	Cute
-signature_songs	輝きのエチュード, Growing for a dream, Dance in the rain
+signature_songs	
 sing	霧島 若歌
-belonging_to	Soleil, STAR☆ANIS, 2wingS
+belonging_to	
 school	スターライト学園
 --]]
 
@@ -70,7 +70,7 @@ Aikatsu.groups.Soleil()
 --[[
 name	Soleil
 members	星宮 いちご, 霧矢 あおい, 紫吹 蘭
-songs	ダイヤモンドハッピー
+songs	
 --]]
 ```
 
