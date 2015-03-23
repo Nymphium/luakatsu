@@ -3,7 +3,7 @@
 ver=$(lua -luakatsu -e print\(Aikatsu.version\))
 
 cat <<EOF > README.md
-# luakatsu (Lua + Aikastu) "${ver}"
+# luakatsu (Lua + Aikastu) ${ver}
 [Rubicure](https://github.com/sue445/rubicure) is **Ruby + Precure**, it is **Lua + [Aikastu](http://aikatsu.wikia.com/wiki/Aikatsu_Wiki)**
 
 ## install
@@ -40,7 +40,7 @@ $ lua
 > print(type(Aikatsu))
 table
 > print(Aikatsu.version)
-"${ver}"
+${ver}
 \`\`\`
 
 ### profile
