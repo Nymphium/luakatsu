@@ -18,14 +18,6 @@ luarocks --local make
 \`\`\`
 
 
-### each versions
-\`luarocks --local --from=https://github.com/Nymphium/luakatsu/raw/*VERSION* install luakatsu\`
-
-#### example(v1.0-0)
-
-\`luarocks --local --from=https://github.com/Nymphium/luakatsu/raw/v1.0-0 install luakatsu\`
-
-
 ## compatibility
 after v1.3, non-idol characters' data is nothing here.
 and catchphrase is not supported.
