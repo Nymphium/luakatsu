@@ -19,7 +19,7 @@ build = {
       uakatsu = "uakatsu.lua",
       ['luakatsu.bin.makemt'] = "luakatsu/bin/makemt.lua",
       ['luakatsu.lib.groups'] = "luakatsu/lib/groups.lua",
-      ['luakatsu.lib.idols'] = "luakatsu/lib/idols.lua",
+      ['luakatsu.lib.idols'] = "luakatsu/lib/idols.lua"
    }
 }
 
