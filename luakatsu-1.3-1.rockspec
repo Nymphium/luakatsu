@@ -1,7 +1,7 @@
 package = "luakatsu"
 version = "1.3-1"
 source = {
-   url = "git://github.com/Nymphium/luakatsu"
+   url = "git://github.com/Nymphium/luakatsu.git"
 }
 description = {
    summary = "hoge",
