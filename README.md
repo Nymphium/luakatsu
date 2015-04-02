@@ -1,8 +1,8 @@
-# luakatsu (Lua + Aikastu) v1.3-1
+# luakatsu (Lua + Aikastu) v2.0-0
 [Rubicure](https://github.com/sue445/rubicure) is **Ruby + Precure**, it is **Lua + [Aikastu](http://aikatsu.wikia.com/wiki/Aikatsu_Wiki)**
 
 ## install
-`luarocks --local --from=https://github.com/Nymphium/luakatsu/raw/master/ install luakatsu`
+`luarocks --local install luakatsu`
 
 or
 
@@ -14,8 +14,13 @@ luarocks --local make
 
 
 ## compatibility
-after v1.3, non-idol characters' data is nothing here.
-and catchphrase is not supported.
+after v2.0,
+- `An_idol.belonging_to` variable is renamed to `An_idol.affilication`
+
+- Idols' birthdays got zero-padding. (ex. `Aikatsu.Ichigo.birthday  --> 03/15`)
+
+- add favorite_foods and special_ablity
+
 
 ## usage
 ```
@@ -25,7 +30,7 @@ $ lua
 > print(type(Aikatsu))
 table
 > print(Aikatsu.version)
-v1.3-1
+v2.0-0
 ```
 
 ### profile
@@ -40,14 +45,16 @@ Aikatsu.Ichigo()
 --[[
 name	星宮 いちご
 actor	諸星 すみれ
-birthday	3/15
+birthday	03/15
 zodiac_sign	Picces
 blood_type	O
+favorite_foods	のり弁
+special_ablity	ご飯をきっちりよそう
 favorite_brand	Angely Sugar
 type	Cute
 signature_songs	輝きのエチュード, Growing for a dream, Dance in the rain
 sing	霧島 若歌
-belonging_to	Soleil, STAR☆ANIS, 2wingS
+affilication	Soleil, STAR☆ANIS, 2wingS
 school	スターライト学園
 --]]
 
