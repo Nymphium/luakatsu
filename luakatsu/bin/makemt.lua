@@ -16,14 +16,12 @@ local printprof = function(prof)
 			if type(val[1]) == "table" then
 				local t = {}
 
-				for _, name in pairs(val) do
-					table.insert(t, name.name)
-				end
+				for _, name in pairs(val) do table.insert(t, name.name) end
 
-				val = table.concat(t, ", ")
-			else
-				val = table.concat(val, ", ")
+				val = t
 			end
+
+			val = table.concat(val, ", ")
 		end
 
 		if key and val then
