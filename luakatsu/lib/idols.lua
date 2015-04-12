@@ -1,458 +1,326 @@
---[[ function detect_zodiac
-detect zodiac sign with date
-
----
-arg. date(string): a date format as "MM/DD"
----
-return: string
---]]
-local function detect_zodiac(date)
-	local m, d = date:match("(%d+)/(%d+)")
-	m = tonumber(m)
-	d = tonumber(d)
-
-	if m < 2 then return d < 20 and "Capricorn" or "Aquarius" end
-	if m < 3 then return d < 19 and "Aquarius" or "Pisces" end
-	if m < 4 then return d < 21 and "Pisces" or "Aries" end
-	if m < 5 then return d < 20 and "Aries" or "Taurus" end
-	if m < 6 then return d < 21 and "Taurus" or "Gemini" end
-	if m < 7 then return d < 22 and "Gemini" or "Cancer" end
-	if m < 8 then return d < 23 and "Cancer" or "Leo" end
-	if m < 9 then return d < 23 and "Leo" or "Virgo" end
-	if m < 10 then return d < 23 and "Virgo" or "Libra" end
-	if m < 11 then return d < 24 and "Libra" or "Scorpio" end
-	if m < 12 then return d < 23 and "Scorpio" or "Sagittarius" end
-	return d < 23 and "Sagittarius" or "Capricorn"
-end
-
-
-
---[[ function tag
-return table: `{TAG, ARG}` , able to assigne tag name with number
-
----
-arg. category(number or string): number or tag name
-	number:
-		1: name
-		2: actor
-		3: birthday
-		4: blood_type
-		5: favorite_foods
-		6: special_ablity
-		7: favorite_brand
-		8: type
-		9: signature_songs
-		10: songs
-		11: sing
-		12: school
-arg. arg(any type): some argument
-	with some `category`, can use numbers instead of some values
-	
-	category:
-		4 (blood_type):
-			arg:
-				1: "A"
-				2: "B"
-				3: "O"
-				4: "AB"
-		9 (type):
-			arg:
-				1: "Cute"
-				2: "Pop"
-				3: "Sexy"
-				4: "Cool"
-		12 (school):
-			arg:
-				1: "スターライト学園"
-				2: "ドリーム･アカデミー"
----
-return: table
---]]
-local function tag(category, arg)
-	if type(category) ~= "number" then
-		return {category, arg}
-	end
-
-	local tagname
-
-	if category < 2 then
-		tagname = "name"
-	elseif category < 3 then
-		tagname = "actor"
-	elseif category < 4 then
-		return {"birthday", arg}, {"zodiac_sign", detect_zodiac(arg)}
-	elseif category < 5 then
-		tagname = "blood_type"
-
-		if arg < 2 then
-			arg = "A"
-		elseif arg < 3 then
-			arg = "B"
-		elseif arg < 4 then
-			arg = "O"
-		elseif arg < 5 then
-			arg = "AB"
-		end
-	elseif category < 6 then
-		tagname = "favorite_foods"
-	elseif category < 7 then
-		tagname = "special_ablity"
-	elseif category < 8 then
-		tagname = "favorite_brand"
-	elseif category < 9 then
-		tagname = "type"
-
-		if arg < 2 then
-			arg = "Cute"
-		elseif arg < 3 then
-			arg = "Pop"
-		elseif arg < 4 then
-			arg = "Sexy"
-		elseif arg < 5 then
-			arg = "Cool"
-		end
-	elseif category < 10 then
-		tagname = "signature_songs"
-	elseif category < 11 then
-		tagname = "sing"
-	elseif category < 12 then
-		tagname = "affilication"
-	elseif category < 13 then
-		tagname = "school"
-
-		if arg < 2 then
-			arg = "スターライト学園"
-		elseif arg < 3 then
-			arg = "ドリーム･アカデミー"
-		end
-	end
-
-	return {tagname, arg}
-end
-
-
+local tag = require "luakatsu/bin/tag"
 
 return setmetatable({
-		{
-			tag(1, "星宮いちご"),
-			name_rm = "Ichigo",
-			tag(2, "諸星 すみれ"),
-			tag(3 , "03/15"),
-			tag(4 , 3),
-			tag(5 , {"のり弁"}),
-			tag(6 , {"ご飯をきっちりよそう"}),
-			tag(7 , "Angely Sugar"),
-			tag(8 , 1),
-			tag(9 , {"輝きのエチュード", "Growing for a dream", "Dance in the rain"}),
-			tag(10 , "霧島 若歌"),
-			tag(11 , {"Soleil", "STAR☆ANIS", "2wingS"}),
-			tag(12 , 1),
-		},
-		{
-			tag(1, "霧矢 あおい"),
-			name_rm = "Aoi",
-			tag(2, "田所 あずさ"),
-			tag(3, "01/31"),
-			tag(4, 1),
-			tag(5, {"サンドイッチ"}),
-			tag(6, {"一目見たアイドルは忘れない"}),
-			tag(7, "FUTURING GIRL"),
-			tag(8, 4),
-			tag(9, {"prism spiral", "Stranger alien"}),
-			tag(10, "上花 風裏"),
-			tag(11, {"Soleil", "STAR☆ANIS"}),
-			tag(12, 1),
-		},
-		{
-			tag(1, "紫吹 蘭"),
-			name_rm = "Ran",
-			tag(2, "大橋 彩香"),
-			tag(3, "08/03"),
-			tag(4, 4),
-			tag(5, {"野菜スティック", "ヨーグルト"}),
-			tag(6, {"ウォーキング", "ポージング"}),
-			tag(7, "SPICY AGEHA"),
-			tag(8, 3),
-			tag(9, {"Trap of Love"}),
-			tag(10, "市倉 有菜"),
-			tag(11, {"Soleil", "Tristar", "STAR☆ANIS"}),
-			tag(12, 1),
-		},
-		{
-			tag(1, "神谷 しおん"),
-			name_rm = "Shion",
-			tag(2, "瀬戸 麻沙美"),
-			tag(3, "01/11"),
-			tag(4, 1),
-			tag(5, {"ガトーショコラ"}),
-			tag(7, "FUTURING GIRL"),
-			tag(8, 4),
-			tag(11, {"Powa²×PuRiRiN!!!"}),
-			tag(12 ),
-		},
-		{
-			tag(1, "有栖川 おとめ"),
-			name_rm = "Otome",
-			tag(2, "黒沢 ともよ"),
-			tag(3, "05/05"),
-			tag(4, 2),
-			tag(5, {"ハンバーグ", "オムライス", "スパゲッティ", "エビフライ", "プリン"}),
-			tag(6, {"動物のモノマネ"}),
-			tag(7, "HAPPY RAINBOW"),
-			tag(8, 2),
-			tag(9, {"Angel Snow", "放課後ポニーテール", "CHU-CHU RAINBOW"}),
-			tag(10, "美谷 玲美"),
-			tag(11, {"Powa²×PuRiRiN!!!", "STAR☆ANIS"}),
-			tag(12, 1),
-		},
-		{
-			tag(1, "藤堂 ユリカ"),
-			name_rm = "Yurika",
-			tag(2, "沼倉 愛美"),
-			tag(3, "12/26"),
-			tag(4, 2),
-			tag(5, {"牛丼", "ラーメン"}),
-			tag(6, {"水泳"}),
-			tag(7, "LoLi GoThiC"),
-			tag(8, 4),
-			tag(9, {"硝子ドール", "永遠の灯"}),
-			tag(10, "美谷 玲美"),
-			tag(11, {"Tristar", "STAR☆ANIS"}),
-			tag(12, 1),
-		},
-		{
-			tag(1, "北大路 さくら"),
-			name_rm = "Sakura",
-			tag(2, "安野 希世乃"),
-			tag(3, "04/06"),
-			tag(4, 1),
-			tag(5, {"抹茶", "和菓子"}),
-			tag(6, {"特に何も"}),
-			tag(7, "Aurora Fantasy"),
-			tag(8, 1),
-			tag(9, {"同じ地球のしあわせに"}),
-			tag(10, {"Powa²×PuRiRiN!!!", "STAR☆ANIS"}),
-			tag(11, "愛野 えり"),
-			tag(12, 1),
-			tag("pets", {"koiichi", "koini", "koisan", "koishi", "koigo", "koiroku"}),
-		},
-		{
-			tag(1, "一ノ瀬 かえで"),
-			name_rm = "Kaede",
-			tag(2, "三村 ゆうな"),
-			tag(3, "11/23"),
-			tag(4, 3),
-			tag(5, {"カリフォルニアロール", "ハンバーガー"}),
-			tag(6, {"マジック", "ダンス全般"}),
-			tag(7, "MAGICAL TOY"),
-			tag(8, 2),
-			tag(10 , {"Tristar", "STAR☆ANIS"}),
-			tag(11, "市倉 有菜"),
-			tag(12 , 1),
-		},
-		{
-			tag(1, "三ノ輪 ヒカリ"),
-			name_rm = "Hikari",
-			tag(2, "森谷 里美"),
-			tag(3, "03/28"),
-			tag(4, 4),
-			tag(5, {"トロピカルジュース", "ロコモコ"}),
-			tag(7, "SPICY AGEHA"),
-			tag(8, 3),
-			tag(11, "森下 ゆにこ"),
-			tag(12, 1),
-		},
-		{
-			tag(1, "大空 あかり"),
-			name_rm = "Akari",
-			tag(2, "下地 柴野"),
-			tag(3, "04/01"),
-			tag(4, 1),
-			tag(5, {"スイカ", "チョコレート", "ドーナツ", "みかん", "カレー"}),
-			tag(6, "ものまね"),
-			tag(7, "Dreamy Crown"),
-			tag(8, 1),
-			tag(9, {"Blooming♡Blooming", }),
-			tag(10, "遠藤 瑠香"),
-			tag(11, {"GOGO! いちご応援隊"}),
-			tag(12, 1),
-		},
-		{
-			tag(1, "氷上 スミレ"),
-			name_rm = "Sumire",
-			tag(2, "和久井 優"),
-			tag(3, "10/20"),
-			tag(4, 4),
-			tag(5, {"紅茶", "スコーン"}),
-			tag(6, {"タロット占い"}),
-			tag(7, "LoLi GoThiC"),
-			tag(8, 4),
-			tag(9, {"タルト･タタン"}),
-			tag(10, "巴山 萌菜"),
-			tag(11, {"GOGO! いちご応援隊"}),
-			tag(12, 1),
-		},
-		{
-			tag(1, "新条 ひなき"),
-			name_rm = "Hinaki",
-			tag(2, "石川 由依"),
-			tag(3, "06/11"),
-			tag(4, 2),
-			tag(5, {"ビタミンCドリンク", "グレープフルーツ", "アサイー"}),
-			tag(6, {"美の追求", "情報収集", "新ブランドなどのニュース集め"}),
-			tag(7, "ViVid Kiss"),
-			tag(8, 2),
-			tag(10, "みき"),
-			tag(11, {"GOGO! いちご応援隊"}),
-			tag(12, 1),
-		},
-		{
-			tag(1, "紅林 珠璃"),
-			name_rm = "Juri",
-			tag(2, "斎藤 綾"),
-			tag(3, "07/31"),
-			tag(4, 3),
-			tag(5, {"生ハム", "パエリア"}),
-			tag(6, {"フラメンコ", "バレエ"}),
-			tag(7, "Sangria Rosa"),
-			tag(8, 3),
-			tag(9, {"Passion Flower"}),
-			tag(10, "みほ"),
-			tag(12, 1),
-		},
-		{
-			tag(1, "黒沢 凛"),
-			name_rm = "Rin",
-			tag(2, "高田 憂希"),
-			tag(3, "01/01"),
-			tag(4, 4),
-			tag(5, {"しらたまあんみつ", "からあげ"}),
-			tag(6, {"ダンス"}),
-			tag(7, "Dance Fusion"),
-			tag(8, 4),
-			tag(9, {"MY SHOW TIME!"}),
-			tag(10, "ななせ"),
-			tag(12, 1),
-		},
-		{
-			tag(1, "天羽 まどか"),
-			name_rm = "Madoka",
-			tag(2, "川上 千尋"),
-			tag(3, "02/14"),
-			tag(4, 3),
-			tag(5, {"チョコレート"}),
-			tag(6, {"スマイル"}),
-			tag(7, "Angely Sugar"),
-			tag(8, 1),
-			tag(9, {"ハローニューワールド"}),
-			tag(10, "かな"),
-			tag(12, 1),
-		},
+	{
+		tag(1, "星宮いちご"),
+		name_rm = "Ichigo",
+		tag(2, "諸星 すみれ"),
+		tag(3 , "03/15"),
+		tag(4 , 3),
+		tag(5 , "のり弁"),
+		tag(6 , "ご飯をきっちりよそう"),
+		tag(7 , "Angely Sugar"),
+		tag(8 , 1),
+		tag(9 , "輝きのエチュード", "Growing for a dream", "Dance in the rain"),
+		tag(10 , "霧島 若歌"),
+		tag(11 , "Soleil", "STAR☆ANIS", "2wingS"),
+		tag(12 , 1),
+	},
+	{
+		tag(1, "霧矢 あおい"),
+		name_rm = "Aoi",
+		tag(2, "田所 あずさ"),
+		tag(3, "01/31"),
+		tag(4, 1),
+		tag(5, "サンドイッチ"),
+		tag(6, "一目見たアイドルは忘れない"),
+		tag(7, "FUTURING GIRL"),
+		tag(8, 4),
+		tag(9, "prism spiral", "Stranger alien"),
+		tag(10, "上花 風裏"),
+		tag(11, "Soleil", "STAR☆ANIS"),
+		tag(12, 1),
+	},
+	{
+		tag(1, "紫吹 蘭"),
+		name_rm = "Ran",
+		tag(2, "大橋 彩香"),
+		tag(3, "08/03"),
+		tag(4, 4),
+		tag(5, "野菜スティック", "ヨーグルト"),
+		tag(6, "ウォーキング", "ポージング"),
+		tag(7, "SPICY AGEHA"),
+		tag(8, 3),
+		tag(9, "Trap of Love"),
+		tag(10, "市倉 有菜"),
+		tag(11, "Soleil", "Tristar", "STAR☆ANIS"),
+		tag(12, 1),
+	},
+	{
+		tag(1, "神谷 しおん"),
+		name_rm = "Shion",
+		tag(2, "瀬戸 麻沙美"),
+		tag(3, "01/11"),
+		tag(4, 1),
+		tag(5, "ガトーショコラ"),
+		tag(7, "FUTURING GIRL"),
+		tag(8, 4),
+		tag(11, "Powa²×PuRiRiN"),
+		tag(12, 1),
+	},
+	{
+		tag(1, "有栖川 おとめ"),
+		name_rm = "Otome",
+		tag(2, "黒沢 ともよ"),
+		tag(3, "05/05"),
+		tag(4, 2),
+		tag(5, "ハンバーグ", "オムライス", "スパゲッティ", "エビフライ", "プリン"),
+		tag(6, "動物のモノマネ"),
+		tag(7, "HAPPY RAINBOW"),
+		tag(8, 2),
+		tag(9, "Angel Snow", "放課後ポニーテール", "CHU-CHU RAINBOW"),
+		tag(10, "美谷 玲美"),
+		tag(11, "Powa²×PuRiRiN", "STAR☆ANIS"),
+		tag(12, 1),
+	},
+	{
+		tag(1, "藤堂 ユリカ"),
+		name_rm = "Yurika",
+		tag(2, "沼倉 愛美"),
+		tag(3, "12/26"),
+		tag(4, 2),
+		tag(5, "牛丼", "ラーメン"),
+		tag(6, "水泳"),
+		tag(7, "LoLi GoThiC"),
+		tag(8, 4),
+		tag(9, "硝子ドール", "永遠の灯"),
+		tag(10, "美谷 玲美"),
+		tag(11, "Tristar", "STAR☆ANIS"),
+		tag(12, 1),
+	},
+	{
+		tag(1, "北大路 さくら"),
+		name_rm = "Sakura",
+		tag(2, "安野 希世乃"),
+		tag(3, "04/06"),
+		tag(4, 1),
+		tag(5, "抹茶", "和菓子"),
+		tag(6, "特に何も"),
+		tag(7, "Aurora Fantasy"),
+		tag(8, 1),
+		tag(9, "同じ地球のしあわせに"),
+		tag(10, "Powa²×PuRiRiN", "STAR☆ANIS"),
+		tag(11, "愛野 えり"),
+		tag(12, 1),
+		tag("pets", "こいいち", "こいじ", "こいぞう", "こいし", "こいご", "こいろく", "こいしち", "こいはち", "こいきゅう", "こいじゅう"),
+	},
+	{
+		tag(1, "一ノ瀬 かえで"),
+		name_rm = "Kaede",
+		tag(2, "三村 ゆうな"),
+		tag(3, "11/23"),
+		tag(4, 3),
+		tag(5, "カリフォルニアロール", "ハンバーガー"),
+		tag(6, "マジック", "ダンス全般"),
+		tag(7, "MAGICAL TOY"),
+		tag(8, 2),
+		tag(10, "Tristar", "STAR☆ANIS"),
+		tag(11, "市倉 有菜"),
+		tag(12 , 1),
+	},
+	{
+		tag(1, "三ノ輪 ヒカリ"),
+		name_rm = "Hikari",
+		tag(2, "森谷 里美"),
+		tag(3, "03/28"),
+		tag(4, 4),
+		tag(5, "トロピカルジュース", "ロコモコ"),
+		tag(7, "SPICY AGEHA"),
+		tag(8, 3),
+		tag(11, "森下 ゆにこ"),
+		tag(12, 1),
+	},
+	{
+		tag(1, "大空 あかり"),
+		name_rm = "Akari",
+		tag(2, "下地 柴野"),
+		tag(3, "04/01"),
+		tag(4, 1),
+		tag(5, "スイカ", "チョコレート", "ドーナツ", "みかん", "カレー"),
+		tag(6, "ものまね"),
+		tag(7, "Dreamy Crown"),
+		tag(8, 1),
+		tag(9, "Blooming♡Blooming"),
+		tag(10, "遠藤 瑠香"),
+		tag(11, "GOGO! いちご応援隊"),
+		tag(12, 1),
+	},
+	{
+		tag(1, "氷上 スミレ"),
+		name_rm = "Sumire",
+		tag(2, "和久井 優"),
+		tag(3, "10/20"),
+		tag(4, 4),
+		tag(5, "紅茶", "スコーン"),
+		tag(6, "タロット占い"),
+		tag(7, "LoLi GoThiC"),
+		tag(8, 4),
+		tag(9, "タルト･タタン"),
+		tag(10, "巴山 萌菜"),
+		tag(11, "GOGO! いちご応援隊"),
+		tag(12, 1),
+	},
+	{
+		tag(1, "新条 ひなき"),
+		name_rm = "Hinaki",
+		tag(2, "石川 由依"),
+		tag(3, "06/11"),
+		tag(4, 2),
+		tag(5, "ビタミンCドリンク", "グレープフルーツ", "アサイー"),
+		tag(6, "美の追求", "情報収集", "新ブランドなどのニュース集め"),
+		tag(7, "ViVid Kiss"),
+		tag(8, 2),
+		tag(10, "みき"),
+		tag(11, "GOGO! いちご応援隊"),
+		tag(12, 1),
+	},
+	{
+		tag(1, "紅林 珠璃"),
+		name_rm = "Juri",
+		tag(2, "斎藤 綾"),
+		tag(3, "07/31"),
+		tag(4, 3),
+		tag(5, "生ハム", "パエリア"),
+		tag(6, "フラメンコ", "バレエ"),
+		tag(7, "Sangria Rosa"),
+		tag(8, 3),
+		tag(9, "Passion Flower"),
+		tag(10, "みほ"),
+		tag(12, 1),
+	},
+	{
+		tag(1, "黒沢 凛"),
+		name_rm = "Rin",
+		tag(2, "高田 憂希"),
+		tag(3, "01/01"),
+		tag(4, 4),
+		tag(5, "しらたまあんみつ", "からあげ"),
+		tag(6, "ダンス"),
+		tag(7, "Dance Fusion"),
+		tag(8, 4),
+		tag(9, "MY SHOW TIME!"),
+		tag(10, "ななせ"),
+		tag(12, 1),
+	},
+	{
+		tag(1, "天羽 まどか"),
+		name_rm = "Madoka",
+		tag(2, "川上 千尋"),
+		tag(3, "02/14"),
+		tag(4, 3),
+		tag(5, "チョコレート"),
+		tag(6, "スマイル"),
+		tag(7, "Angely Sugar"),
+		tag(8, 1),
+		tag(9, "ハローニューワールド"),
+		tag(10, "かな"),
+		tag(12, 1),
+	},
 
-		-- Dream Academy
-		{
-			tag(1, "音城 セイラ"),
-			name_rm = "Seira",
-			tag(2, "石原 夏織"),
-			tag(3, "11/11"),
-			tag(4, 1),
-			tag(5, {"パスタ", "コーヒーゼリー"}),
-			tag(6, {"学期全般"}),
-			tag(7, "Swing ROCK"),
-			tag(8, 4),
-			tag(10, "上花 風裏"),
-			tag(11, {"2wingS"}),
-			tag(12, 2),
-		},
-		{
-			tag(1, "冴草 きい"),
-			name_rm = "Kii",
-			tag(2, "秋奈"),
-			tag(3, "12/03"),
-			tag(4, 3),
-			tag(5, {"ブレインサンダー"}),
-			tag(6, {"パソコン"}),
-			tag(7, "MAGICAL TOY"),
-			tag(8, 2),
-			tag(9, {"マジカルタイム"}),
-			tag(10, "市倉 有菜"),
-			tag(12, 2),
-		},
-		{
-			tag(1, "風沢 そら"),
-			name_rm = "Sora",
-			tag(2, "高橋 未奈美"),
-			tag(3, "10/02"),
-			tag(4, 2),
-			tag(5, {"エスニック料理全般"}),
-			tag(6, {"ドレスデザイン", "一人旅"}),
-			tag(7, "Bohemian Sky"),
-			tag(8, 3),
-			tag(9, {"Kira･pata･shining"}),
-			tag(10, "愛野 えり"),
-			tag(12, 2),
-			tag("pets", "パーム"),
-		},
-		{
-			tag(1, "姫里 マリア"),
-			name_rm = "Maria",
-			tag(2, "冨岡 美沙子"),
-			tag(3, "04/18"),
-			tag(4, 3),
-			tag(5, {"ザッハトルテ"}),
-			tag(6, {"違いのわかる女!"}),
-			tag(7, "Aurora Fantasy"),
-			tag(8, 1),
-			tag(9, {"オーロラプリンセス"}),
-			tag(10, "愛野 えり"),
-			tag(12, 2),
-			tag("pets", "エリザベス三世"),
-		},
+	-- Dream Academy
+	{
+		tag(1, "音城 セイラ"),
+		name_rm = "Seira",
+		tag(2, "石原 夏織"),
+		tag(3, "11/11"),
+		tag(4, 1),
+		tag(5, "パスタ", "コーヒーゼリー"),
+		tag(6, "楽器全般"),
+		tag(7, "Swing ROCK"),
+		tag(8, 4),
+		tag(10, "上花 風裏"),
+		tag(11, "2wingS"),
+		tag(12, 2),
+	},
+	{
+		tag(1, "冴草 きい"),
+		name_rm = "Kii",
+		tag(2, "秋奈"),
+		tag(3, "12/03"),
+		tag(4, 3),
+		tag(5, "ブレインサンダー"),
+		tag(6, "パソコン"),
+		tag(7, "MAGICAL TOY"),
+		tag(8, 2),
+		tag(9, "マジカルタイム"),
+		tag(10, "市倉 有菜"),
+		tag(12, 2),
+	},
+	{
+		tag(1, "風沢 そら"),
+		name_rm = "Sora",
+		tag(2, "高橋 未奈美"),
+		tag(3, "10/02"),
+		tag(4, 2),
+		tag(5, "エスニック料理全般"),
+		tag(6, "ドレスデザイン", "一人旅"),
+		tag(7, "Bohemian Sky"),
+		tag(8, 3),
+		tag(9, "Kira･pata･shining"),
+		tag(10, "愛野 えり"),
+		tag(12, 2),
+		tag("pets", "パーム"),
+	},
+	{
+		tag(1, "姫里 マリア"),
+		name_rm = "Maria",
+		tag(2, "冨岡 美沙子"),
+		tag(3, "04/18"),
+		tag(4, 3),
+		tag(5, "ザッハトルテ"),
+		tag(6, "違いのわかる女!"),
+		tag(7, "Aurora Fantasy"),
+		tag(8, 1),
+		tag(9, "オーロラプリンセス"),
+		tag(10, "愛野 えり"),
+		tag(12, 2),
+		tag("pets", "エリザベス三世"),
+	},
 
-		-- other
-		{
-			tag(1, "神崎 美月"),
-			name_rm = "Mizuki",
-			tag(2, "寿 美菜子"),
-			tag(3, "09/18"),
-			tag(4, 1),
-			tag(5, {"マロングラッセ", "香りの良い紅茶"}),
-			tag(6, {"歌"}),
-			tag(7, "LOVE MOONRISE"),
-			tag(8, 3),
-			tag(9, {"Move on now!", "Moonlight destiny", "Precious"}),
-			tag(10, "ささかま リス子"),
-			tag(12, {"Tristar", "STAR☆ANIS", "WM"}),
-		},
-		{
-			tag(1, "夏樹 みくる"),
-			name_rm = "Mikuru",
-			tag(2, "洲崎 綾"),
-			tag(3, "07/07"),
-			tag(4, 3),
-			tag(5, {"アイスクリーム", "ソーダ"}),
-			tag(6, {"ガーデニング", "洋服のリメイク", "サーフィン"}),
-			tag(7, "ViVid Kiss"),
-			tag(8, 2),
-			tag(9, {"オトナモード"}),
-			tag(10, "巴山 萌菜"),
-			tag(11, {"WM"}),
-			tag("pets", "フェレッ太"),
-		},
-		{
-			tag(1, "藤原 みやび"),
-			name_rm = "Miyabi",
-			tag(2, "関根 明良"),
-			tag(3, "09/14"),
-			tag(4, 2),
-			tag(5, {"お漬物", "抹茶スイーツ"}),
-			tag(6, {"着付け", "薙刀"}),
-			tag(7, "桜色花伝"),
-			tag(8, 2),
-			tag(9, {"薄紅デイトリッパー"}),
-			tag(10, "美谷 玲美"),
-			tag(12, "姫桜女学院"),
-		}
-	}, {__mode = "k"}
-	)
+	-- other
+	{
+		tag(1, "神崎 美月"),
+		name_rm = "Mizuki",
+		tag(2, "寿 美菜子"),
+		tag(3, "09/18"),
+		tag(4, 1),
+		tag(5, "マロングラッセ", "香りの良い紅茶"),
+		tag(6, "歌"),
+		tag(7, "LOVE MOONRISE"),
+		tag(8, 3),
+		tag(9, "Move on now!", "Moonlight destiny", "Precious"),
+		tag(10, "ささかま リス子"),
+		tag(11, "Tristar", "STAR☆ANIS", "WM"),
+	},
+	{
+		tag(1, "夏樹 みくる"),
+		name_rm = "Mikuru",
+		tag(2, "洲崎 綾"),
+		tag(3, "07/07"),
+		tag(4, 3),
+		tag(5, "アイスクリーム", "ソーダ"),
+		tag(6, "ガーデニング", "洋服のリメイク", "サーフィン"),
+		tag(7, "ViVid Kiss"),
+		tag(8, 2),
+		tag(9, "オトナモード"),
+		tag(10, "巴山 萌菜"),
+		tag(11, "WM"),
+		tag("pets", "フェレッ太"),
+	},
+	{
+		tag(1, "藤原 みやび"),
+		name_rm = "Miyabi",
+		tag(2, "関根 明良"),
+		tag(3, "09/14"),
+		tag(4, 2),
+		tag(5, "お漬物", "抹茶スイーツ"),
+		tag(6, "着付け", "薙刀"),
+		tag(7, "桜色花伝"),
+		tag(8, 2),
+		tag(9, "薄紅デイトリッパー"),
+		tag(10, "美谷 玲美"),
+		tag(12, "姫桜女学院"),
+	}
+}, {__mode = "k"}
+)
 

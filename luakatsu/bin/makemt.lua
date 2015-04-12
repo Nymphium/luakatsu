@@ -35,13 +35,17 @@ local mkprofmt = function(prof)
 
 	for key, val in prof_iter(prof) do
 		mt[key] = val
+		
+		if type(val) == "table" then
+			setmetatable(mt[key], {__call = function() printprof(val) end})
+		end
+		
 	end
 
 	return mt
 end
 
-
-return function(t)
+local makemt = function(t)
 	local index = {}
 	local ret = {}
 
@@ -55,4 +59,6 @@ return function(t)
 
 	return setmetatable(ret, {__index = index})
 end
+
+return makemt
 

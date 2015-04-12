@@ -7,7 +7,7 @@ return function(idols)
 			{"songs", {"ダイヤモンドハッピー"}}
 		},
 		{
-			{"name", "Powa²×PuRiRiN!!!"},
+			{"name", "Powa²×PuRiRiN"},
 			name_rm = "Powapuri",
 			{"members", {idols.Shion, idols.Otome, idols.Sakura}},
 		},
