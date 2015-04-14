@@ -71,6 +71,18 @@ songs	ダイヤモンドハッピー
 --]]
 ```
 
+### find
+```lua
+for _, v in pairs(Aikatsu.find("あ")) do
+	print(v.name)
+end
+
+--[[
+霧矢 あおい
+大空 あかり
+--]]
+```
+
 
 ### one-liner
 ```
