@@ -9,8 +9,9 @@ _M.__call = function()
 	print(msg)
 end
 
+idols.groups = makemt(require("luakatsu/lib/groups")(idols))
+idols.find = require("luakatsu/bin/find")
+idols.version = "v2.0-0"
+
 Aikatsu = setmetatable(idols, _M)
-Aikatsu.version = "v2.0-0"
-Aikatsu.groups = makemt(require("luakatsu/lib/groups")(idols))
-Aikatsu.find = require("luakatsu/bin/find")
 

@@ -1,11 +1,11 @@
 package = "luakatsu"
-version = "dev-2"
+version = "2.0-0"
 source = {
-   url = "git://github.com/Nymphium/luakatsu.git",
-   branch = "v2.0-tmp"
+   url = "git://github.com/Nymphium/luakatsu",
+   tag = "v2.0"
 }
 description = {
-   summary = "## install`luarocks --local install luakatsu`",
+   summary = "Aikatsu! --- Idol KATSUDOU, with Lua",
    detailed = "Let's Aikatsu! with Lua!!",
    homepage = "https://github.com/Nymphium/luakatsu",
    license = "MIT"
