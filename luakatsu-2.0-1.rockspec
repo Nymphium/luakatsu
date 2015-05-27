@@ -1,5 +1,5 @@
 package = "luakatsu"
-version = "2.0-0"
+version = "2.0-1"
 source = {
    url = "git://github.com/Nymphium/luakatsu",
    tag = "v2.0"
@@ -11,7 +11,7 @@ description = {
    license = "MIT"
 }
 dependencies = {
-   "lua ~> 5.2"
+   "lua >= 5.2"
 }
 build = {
    type = "builtin",

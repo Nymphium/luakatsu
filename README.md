@@ -1,4 +1,4 @@
-# luakatsu (Lua + Aikastu) v2.0-0
+# luakatsu (Lua + Aikastu) v2.0-1
 [Rubicure](https://github.com/sue445/rubicure) is **Ruby + Precure**, it is **Lua + [Aikastu](http://aikatsu.wikia.com/wiki/Aikatsu_Wiki)**
 
 ## install
@@ -30,7 +30,7 @@ $ lua
 > print(type(Aikatsu))
 table
 > print(Aikatsu.version)
-v2.0-0
+v2.0-1
 ```
 
 ### profile
