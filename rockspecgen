@@ -7,7 +7,7 @@ luarocks write_rockspec luakatsu "${ver}" . \
 	--summary="Aikatsu! --- Idol KATSUDOU, with Lua" \
 	--homepage="https://github.com/Nymphium/luakatsu" \
 	--lua-version=5.2 \
-	--url="git://github.com/Nymphium/luakatsu.git" \
+	# --url="git://github.com/Nymphium/luakatsu.git" \
 	--detailed="Let's Aikatsu! with Lua!!" \
 	--tag="v${ver}" \
 	--subver="${2}"

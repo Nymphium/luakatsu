@@ -39,6 +39,30 @@ return function(idols)
 			{"name", "GOGO! いちご応援隊"},
 			name_rm = "Ouentai",
 			{"members", {idols.Akari, idols.Sumire, idols.Hinaki}},
+		},
+		{
+			{"name", "Dancing Diva"},
+			name_rm = "DanDiva",
+			{"members", {idols.Sumire, idols.Hinaki}},
+			{"songs", {"チュチュ･バレリーナ"}}
+		},
+		{
+			{"name", "Skips♪"},
+			name_rm = "Skips",
+			{"members", {idols.Akari, idols.Madoka}},
+			{"songs", {"ハローニューワールド"}}
+		},
+		{
+			{"name", "情熱★ハラペーニョ"},
+			name_rm = "Jalapeno",
+			{"members", {idols.Hinaki, idols.Juri}},
+			{"songs", {"Chica×Chica"}}
+		},
+		{
+			{"name", "あまふわ☆なでしこ"},
+			name_rm = "Amafuwa",
+			{"members", {idols.Miyabi, idols.Kokone}},
+			{"songs", {"恋するみたいなキャラメリゼ"}}
 		}
 	}
 end

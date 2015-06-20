@@ -142,7 +142,7 @@ return setmetatable({
 		tag(8, 1),
 		tag(9, "Blooming♡Blooming"),
 		tag(10, "遠藤 瑠香"),
-		tag(11, "GOGO! いちご応援隊"),
+		tag(11, "GOGO! いちご応援隊", "Skips♪"),
 		tag(12, 1),
 	},
 	{
@@ -157,7 +157,7 @@ return setmetatable({
 		tag(8, 4),
 		tag(9, "タルト･タタン"),
 		tag(10, "巴山 萌菜"),
-		tag(11, "GOGO! いちご応援隊"),
+		tag(11, "GOGO! いちご応援隊", "Dancing Diva"),
 		tag(12, 1),
 	},
 	{
@@ -171,7 +171,7 @@ return setmetatable({
 		tag(7, "ViVid Kiss"),
 		tag(8, 2),
 		tag(10, "みき"),
-		tag(11, "GOGO! いちご応援隊"),
+		tag(11, "GOGO! いちご応援隊", "情熱★ハラペーニョ"),
 		tag(12, 1),
 	},
 	{
@@ -186,6 +186,7 @@ return setmetatable({
 		tag(8, 3),
 		tag(9, "Passion Flower"),
 		tag(10, "みほ"),
+		tag(11, "情熱★ハラペーニョ"),
 		tag(12, 1),
 	},
 	{
@@ -200,6 +201,7 @@ return setmetatable({
 		tag(8, 4),
 		tag(9, "MY SHOW TIME!"),
 		tag(10, "ななせ"),
+		tag(11, "Dancing Diva"),
 		tag(12, 1),
 	},
 	{
@@ -214,6 +216,7 @@ return setmetatable({
 		tag(8, 1),
 		tag(9, "ハローニューワールド"),
 		tag(10, "かな"),
+		tag(11, "Skips♪"),
 		tag(12, 1),
 	},
 
@@ -319,7 +322,23 @@ return setmetatable({
 		tag(8, 2),
 		tag(9, "薄紅デイトリッパー"),
 		tag(10, "美谷 玲美"),
+		tag(11, "あまふわ☆なでしこ"),
 		tag(12, "姫桜女学院"),
+	},
+	{
+		tag(1, "栗栖 ここね"),
+		name_rm = "Kokone",
+		tag(2, "伊藤かな恵"),
+		tag(3, "08/21"),
+		tag(4, 1),
+		tag(5, "シャテーニュロール", "オムレツ"),
+		tag(6, "四葉のクローバーをみつけること"),
+		tag(7, "Retro Clover"),
+		tag(8, 2),
+		tag(9, "Sweet Heart Restaurant"),
+		tag(10, "愛野 えり"),
+		tag(11, "あまふわ☆なでしこ"),
+		tag(12, "エトワール学院")
 	}
 }, {__mode = "k"}
 )

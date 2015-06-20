@@ -43,7 +43,7 @@ arg. category(number or string): number or tag name
 		8: type
 		9: signature_songs
 		10: songs
-		11: sing
+		11: affilication
 		12: school
 arg. ...: some argument
 	if number of arg(...) > 1, these are handed to function as table {...}
