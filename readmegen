@@ -7,6 +7,10 @@ cat <<EOF
 [Rubicure](https://github.com/sue445/rubicure) is **Ruby + Precure**, it is **Lua + [Aikastu](http://aikatsu.wikia.com/wiki/Aikatsu_Wiki)**
 
 ## install
+\`luarocks --local install luakatsu\`
+
+or
+
 \`luarocks --local --from=https://github.com/Nymphium/luakatsu/raw/master/ install luakatsu\`
 
 or
@@ -20,7 +24,7 @@ luarocks --local make
 
 ## compatibility
 after v1.3, non-idol characters' data is nothing here.
-and catchphrase is not supported.
+	and catchphrase is not supported.
 
 ## usage
 \`\`\`
@@ -32,6 +36,9 @@ table
 > print(Aikatsu.version)
 ${ver}
 \`\`\`
+
+### local table (\`version >= v2.1-1\`)
+\`local luakatsu = require "luakatsu.local"\`
 
 ### profile
 

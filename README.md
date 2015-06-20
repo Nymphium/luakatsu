@@ -1,8 +1,12 @@
-# luakatsu (Lua + Aikastu) v2.0-1
+# luakatsu (Lua + Aikastu) v2.1-1
 [Rubicure](https://github.com/sue445/rubicure) is **Ruby + Precure**, it is **Lua + [Aikastu](http://aikatsu.wikia.com/wiki/Aikatsu_Wiki)**
 
 ## install
 `luarocks --local install luakatsu`
+
+or
+
+`luarocks --local --from=https://github.com/Nymphium/luakatsu/raw/master/ install luakatsu`
 
 or
 
@@ -14,13 +18,8 @@ luarocks --local make
 
 
 ## compatibility
-after v2.0,
-- `An_idol.belonging_to` variable is renamed to `An_idol.affilication`
-
-- Idols' birthdays got zero-padding. (ex. `Aikatsu.Ichigo.birthday  --> 03/15`)
-
-- add favorite_foods and special_ablity
-
+after v1.3, non-idol characters' data is nothing here.
+	and catchphrase is not supported.
 
 ## usage
 ```
@@ -30,8 +29,11 @@ $ lua
 > print(type(Aikatsu))
 table
 > print(Aikatsu.version)
-v2.0-1
+v2.1-1
 ```
+
+### local table (`version >= v2.1-1`)
+`local luakatsu = require "luakatsu.local"`
 
 ### profile
 
@@ -43,10 +45,9 @@ print(table.concat(Aikastu.Ichigo.signature_songs), ", ") ---> 輝きのエチ�
 Aikatsu.Ichigo()
 
 --[[
-name	星宮 いちご
+name	星宮いちご
 actor	諸星 すみれ
 birthday	03/15
-zodiac_sign	Picces
 blood_type	O
 favorite_foods	のり弁
 special_ablity	ご飯をきっちりよそう
@@ -66,20 +67,8 @@ Aikatsu.groups.Soleil()
 
 --[[
 name	Soleil
-members	星宮 いちご, 霧矢 あおい, 紫吹 蘭
+members	星宮いちご, 霧矢 あおい, 紫吹 蘭
 songs	ダイヤモンドハッピー
---]]
-```
-
-### find
-```lua
-for _, v in pairs(Aikatsu.find("あ")) do
-	print(v.name)
-end
-
---[[
-霧矢 あおい
-大空 あかり
 --]]
 ```
 
