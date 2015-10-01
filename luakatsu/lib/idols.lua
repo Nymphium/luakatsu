@@ -142,7 +142,7 @@ return setmetatable({
 		tag(8, 1),
 		tag(9, "Blooming♡Blooming"),
 		tag(10, "遠藤 瑠香"),
-		tag(11, "GOGO! いちご応援隊", "Skips♪"),
+		tag(11, "GOGO! いちご応援隊", "Skips♪", "Luminas"),
 		tag(12, 1),
 	},
 	{
@@ -155,9 +155,9 @@ return setmetatable({
 		tag(6, "タロット占い"),
 		tag(7, "LoLi GoThiC"),
 		tag(8, 4),
-		tag(9, "タルト･タタン"),
+		tag(9, "タルト･タタン", "エメラルドの魔法"),
 		tag(10, "巴山 萌菜"),
-		tag(11, "GOGO! いちご応援隊", "Dancing Diva"),
+		tag(11, "GOGO! いちご応援隊", "Dancing Diva", "Luminas"),
 		tag(12, 1),
 	},
 	{
@@ -171,7 +171,7 @@ return setmetatable({
 		tag(7, "ViVid Kiss"),
 		tag(8, 2),
 		tag(10, "みき"),
-		tag(11, "GOGO! いちご応援隊", "情熱★ハラペーニョ"),
+		tag(11, "GOGO! いちご応援隊", "情熱★ハラペーニョ", "Luminas"),
 		tag(12, 1),
 	},
 	{
@@ -186,7 +186,7 @@ return setmetatable({
 		tag(8, 3),
 		tag(9, "Passion Flower"),
 		tag(10, "みほ"),
-		tag(11, "情熱★ハラペーニョ"),
+		tag(11, "情熱★ハラペーニョ", "バニラチリペッパー"),
 		tag(12, 1),
 	},
 	{
@@ -201,7 +201,7 @@ return setmetatable({
 		tag(8, 4),
 		tag(9, "MY SHOW TIME!"),
 		tag(10, "ななせ"),
-		tag(11, "Dancing Diva"),
+		tag(11, "Dancing Diva", "バニラチリペッパー"),
 		tag(12, 1),
 	},
 	{
@@ -216,7 +216,7 @@ return setmetatable({
 		tag(8, 1),
 		tag(9, "ハローニューワールド"),
 		tag(10, "かな"),
-		tag(11, "Skips♪"),
+		tag(11, "Skips♪", "バニラチリペッパー"),
 		tag(12, 1),
 	},
 

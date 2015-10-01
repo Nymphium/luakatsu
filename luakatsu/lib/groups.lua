@@ -10,6 +10,7 @@ return function(idols)
 			{"name", "Powa²×PuRiRiN"},
 			name_rm = "Powapuri",
 			{"members", {idols.Shion, idols.Otome, idols.Sakura}},
+			{"songs", {"Angel Snow"}}
 		},
 		{
 			{"name", "Tristar"},
@@ -63,6 +64,18 @@ return function(idols)
 			name_rm = "Amafuwa",
 			{"members", {idols.Miyabi, idols.Kokone}},
 			{"songs", {"恋するみたいなキャラメリゼ"}}
+		},
+		{
+			{"name", "Luminas"},
+			name_rm = "Luminas",
+			{"members", {idols.Akari, idols.Sumire, idols.Hinaki}},
+			{"songs", {"リルビーリルウィン♪"}}
+		},
+		{
+			{"name", "バニラチリペッパー"},
+			name_rm = "Vanilla",
+			{"members", {idols.Juri, idols.Rin, idols.Madoka}},
+			{"songs", {"Chica×Chica"}}
 		}
 	}
 end
