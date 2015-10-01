@@ -43,24 +43,24 @@ ${ver}
 ### profile
 
 \`\`\`lua
-print(Aikatsu.Ichigo.name) ---> 星宮 いちご
+print(Aikatsu.Akari.name) ---> $(lua -luakatsu -e "print(Aikatsu.Akari.name)")
 
-print(table.concat(Aikastu.Ichigo.signature_songs), ", ") ---> $(lua -luakatsu -e "print(table.concat(Aikatsu.Ichigo.signature_songs, \", \"))")
+print(table.concat(Aikastu.Akari.signature_songs), ', ') ---> $(lua -luakatsu -e "print(table.concat(Aikatsu.Akari.signature_songs, ', '))")
 
-Aikatsu.Ichigo()
+Aikatsu.Akari()
 
 --[[
-$(lua -luakatsu -e Aikatsu.Ichigo\(\))
+$(lua -luakatsu -e Aikatsu.Akari\(\))
 --]]
 
 \`\`\`
 
 ### groups
 \`\`\`lua
-Aikatsu.groups.Soleil()
+Aikatsu.groups.Luminas()
 
 --[[
-$(lua -luakatsu -e "Aikatsu.groups.Soleil()")
+$(lua -luakatsu -e "Aikatsu.groups.Luminas()")
 --]]
 \`\`\`
 

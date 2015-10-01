@@ -11,7 +11,7 @@ end
 
 idols.groups = makemt(require("luakatsu/lib/groups")(idols))
 idols.find = require("luakatsu/bin/find")
-idols.version = "v2.2-1"
+idols.version = "v2.2"
 
 return setmetatable(idols, _M)
 
