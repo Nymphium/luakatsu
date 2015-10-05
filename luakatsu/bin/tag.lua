@@ -42,7 +42,7 @@ arg. category(number or string): number or tag name
 		7: favorite_brand
 		8: type
 		9: signature_songs
-		10: songs
+		10: singer
 		11: affilication
 		12: school
 arg. ...: some argument

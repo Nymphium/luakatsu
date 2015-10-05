@@ -2,8 +2,7 @@ local tag = require "luakatsu/bin/tag"
 
 return setmetatable({
 	{
-		tag(1, "星宮いちご"),
-		name_rm = "Ichigo",
+		tag(1, "星宮いちご"), name_rm = "Ichigo",
 		tag(2, "諸星 すみれ"),
 		tag(3 , "03/15"),
 		tag(4 , 3),
@@ -17,8 +16,7 @@ return setmetatable({
 		tag(12 , 1),
 	},
 	{
-		tag(1, "霧矢 あおい"),
-		name_rm = "Aoi",
+		tag(1, "霧矢 あおい"), name_rm = "Aoi",
 		tag(2, "田所 あずさ"),
 		tag(3, "01/31"),
 		tag(4, 1),
@@ -32,8 +30,7 @@ return setmetatable({
 		tag(12, 1),
 	},
 	{
-		tag(1, "紫吹 蘭"),
-		name_rm = "Ran",
+		tag(1, "紫吹 蘭"), name_rm = "Ran",
 		tag(2, "大橋 彩香"),
 		tag(3, "08/03"),
 		tag(4, 4),
@@ -47,8 +44,7 @@ return setmetatable({
 		tag(12, 1),
 	},
 	{
-		tag(1, "神谷 しおん"),
-		name_rm = "Shion",
+		tag(1, "神谷 しおん"), name_rm = "Shion",
 		tag(2, "瀬戸 麻沙美"),
 		tag(3, "01/11"),
 		tag(4, 1),
@@ -59,8 +55,7 @@ return setmetatable({
 		tag(12, 1),
 	},
 	{
-		tag(1, "有栖川 おとめ"),
-		name_rm = "Otome",
+		tag(1, "有栖川 おとめ"), name_rm = "Otome",
 		tag(2, "黒沢 ともよ"),
 		tag(3, "05/05"),
 		tag(4, 2),
@@ -74,8 +69,7 @@ return setmetatable({
 		tag(12, 1),
 	},
 	{
-		tag(1, "藤堂 ユリカ"),
-		name_rm = "Yurika",
+		tag(1, "藤堂 ユリカ"), name_rm = "Yurika",
 		tag(2, "沼倉 愛美"),
 		tag(3, "12/26"),
 		tag(4, 2),
@@ -89,8 +83,7 @@ return setmetatable({
 		tag(12, 1),
 	},
 	{
-		tag(1, "北大路 さくら"),
-		name_rm = "Sakura",
+		tag(1, "北大路 さくら"), name_rm = "Sakura",
 		tag(2, "安野 希世乃"),
 		tag(3, "04/06"),
 		tag(4, 1),
@@ -105,8 +98,7 @@ return setmetatable({
 		tag("pets", "こいいち", "こいじ", "こいぞう", "こいし", "こいご", "こいろく", "こいしち", "こいはち", "こいきゅう", "こいじゅう"),
 	},
 	{
-		tag(1, "一ノ瀬 かえで"),
-		name_rm = "Kaede",
+		tag(1, "一ノ瀬 かえで"), name_rm = "Kaede",
 		tag(2, "三村 ゆうな"),
 		tag(3, "11/23"),
 		tag(4, 3),
@@ -119,8 +111,7 @@ return setmetatable({
 		tag(12 , 1),
 	},
 	{
-		tag(1, "三ノ輪 ヒカリ"),
-		name_rm = "Hikari",
+		tag(1, "三ノ輪 ヒカリ"), name_rm = "Hikari",
 		tag(2, "森谷 里美"),
 		tag(3, "03/28"),
 		tag(4, 4),
@@ -131,8 +122,7 @@ return setmetatable({
 		tag(12, 1),
 	},
 	{
-		tag(1, "大空 あかり"),
-		name_rm = "Akari",
+		tag(1, "大空 あかり"), name_rm = "Akari",
 		tag(2, "下地 柴野"),
 		tag(3, "04/01"),
 		tag(4, 1),
@@ -146,8 +136,7 @@ return setmetatable({
 		tag(12, 1),
 	},
 	{
-		tag(1, "氷上 スミレ"),
-		name_rm = "Sumire",
+		tag(1, "氷上 スミレ"), name_rm = "Sumire",
 		tag(2, "和久井 優"),
 		tag(3, "10/20"),
 		tag(4, 4),
@@ -161,8 +150,7 @@ return setmetatable({
 		tag(12, 1),
 	},
 	{
-		tag(1, "新条 ひなき"),
-		name_rm = "Hinaki",
+		tag(1, "新条 ひなき"), name_rm = "Hinaki",
 		tag(2, "石川 由依"),
 		tag(3, "06/11"),
 		tag(4, 2),
@@ -175,8 +163,7 @@ return setmetatable({
 		tag(12, 1),
 	},
 	{
-		tag(1, "紅林 珠璃"),
-		name_rm = "Juri",
+		tag(1, "紅林 珠璃"), name_rm = "Juri",
 		tag(2, "斎藤 綾"),
 		tag(3, "07/31"),
 		tag(4, 3),
@@ -190,8 +177,7 @@ return setmetatable({
 		tag(12, 1),
 	},
 	{
-		tag(1, "黒沢 凛"),
-		name_rm = "Rin",
+		tag(1, "黒沢 凛"), name_rm = "Rin",
 		tag(2, "高田 憂希"),
 		tag(3, "01/01"),
 		tag(4, 4),
@@ -205,8 +191,7 @@ return setmetatable({
 		tag(12, 1),
 	},
 	{
-		tag(1, "天羽 まどか"),
-		name_rm = "Madoka",
+		tag(1, "天羽 まどか"), name_rm = "Madoka",
 		tag(2, "川上 千尋"),
 		tag(3, "02/14"),
 		tag(4, 3),
@@ -222,8 +207,7 @@ return setmetatable({
 
 	-- Dream Academy
 	{
-		tag(1, "音城 セイラ"),
-		name_rm = "Seira",
+		tag(1, "音城 セイラ"), name_rm = "Seira",
 		tag(2, "石原 夏織"),
 		tag(3, "11/11"),
 		tag(4, 1),
@@ -236,8 +220,7 @@ return setmetatable({
 		tag(12, 2),
 	},
 	{
-		tag(1, "冴草 きい"),
-		name_rm = "Kii",
+		tag(1, "冴草 きい"), name_rm = "Kii",
 		tag(2, "秋奈"),
 		tag(3, "12/03"),
 		tag(4, 3),
@@ -250,8 +233,7 @@ return setmetatable({
 		tag(12, 2),
 	},
 	{
-		tag(1, "風沢 そら"),
-		name_rm = "Sora",
+		tag(1, "風沢 そら"), name_rm = "Sora",
 		tag(2, "高橋 未奈美"),
 		tag(3, "10/02"),
 		tag(4, 2),
@@ -265,8 +247,7 @@ return setmetatable({
 		tag("pets", "パーム"),
 	},
 	{
-		tag(1, "姫里 マリア"),
-		name_rm = "Maria",
+		tag(1, "姫里 マリア"), name_rm = "Maria",
 		tag(2, "冨岡 美沙子"),
 		tag(3, "04/18"),
 		tag(4, 3),
@@ -282,8 +263,7 @@ return setmetatable({
 
 	-- other
 	{
-		tag(1, "神崎 美月"),
-		name_rm = "Mizuki",
+		tag(1, "神崎 美月"), name_rm = "Mizuki",
 		tag(2, "寿 美菜子"),
 		tag(3, "09/18"),
 		tag(4, 1),
@@ -296,8 +276,7 @@ return setmetatable({
 		tag(11, "Tristar", "STAR☆ANIS", "WM"),
 	},
 	{
-		tag(1, "夏樹 みくる"),
-		name_rm = "Mikuru",
+		tag(1, "夏樹 みくる"), name_rm = "Mikuru",
 		tag(2, "洲崎 綾"),
 		tag(3, "07/07"),
 		tag(4, 3),
@@ -311,8 +290,7 @@ return setmetatable({
 		tag("pets", "フェレッ太"),
 	},
 	{
-		tag(1, "藤原 みやび"),
-		name_rm = "Miyabi",
+		tag(1, "藤原 みやび"), name_rm = "Miyabi",
 		tag(2, "関根 明良"),
 		tag(3, "09/14"),
 		tag(4, 2),
@@ -326,8 +304,7 @@ return setmetatable({
 		tag(12, "姫桜女学院"),
 	},
 	{
-		tag(1, "栗栖 ここね"),
-		name_rm = "Kokone",
+		tag(1, "栗栖 ここね"), name_rm = "Kokone",
 		tag(2, "伊藤かな恵"),
 		tag(3, "08/21"),
 		tag(4, 1),
@@ -339,6 +316,26 @@ return setmetatable({
 		tag(10, "愛野 えり"),
 		tag(11, "あまふわ☆なでしこ"),
 		tag(12, "エトワール学院")
+	},
+	{
+		tag(1, "白樺 リサ"), name_rm = "Lisa",
+		tag(2, "福 沙奈恵"),
+		tag(3, "12/14"),
+		tag(4, 1),
+		tag(5, "ポテトサラダ", "牛乳"),
+		tag(6, "勉強", "編み物"),
+		tag(7, "Dollydevil"),
+		tag(8, 3),
+	},
+	{
+		tag(1, "大地 のの"), name_rm = "Nono",
+		tag(2, "小岩井 ことり"),
+		tag(3, "01/10"),
+		tag(4, 3),
+		tag(5, "肉じゃが", "牛乳", "ほしいも"),
+		tag(6, "カラオケ"),
+		tag(7, "Dollydevil"),
+		tag(8, 3),
 	}
 }, {__mode = "k"}
 )
