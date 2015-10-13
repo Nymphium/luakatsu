@@ -1,4 +1,4 @@
-# luakatsu (Lua + Aikastu) v2.2
+# luakatsu (Lua + Aikastu) v2.3
 [Rubicure](https://github.com/sue445/rubicure) is **Ruby + Precure**, it is **Lua + [Aikastu](http://aikatsu.wikia.com/wiki/Aikatsu_Wiki)**
 
 ## install

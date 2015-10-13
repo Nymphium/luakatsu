@@ -2,7 +2,7 @@ local tag = require "luakatsu/bin/tag"
 
 return setmetatable({
 	{
-		tag(1, "星宮いちご"), name_rm = "Ichigo",
+		tag(1, "星宮 いちご"), name_rm = "Ichigo",
 		tag(2, "諸星 すみれ"),
 		tag(3 , "03/15"),
 		tag(4 , 3),
