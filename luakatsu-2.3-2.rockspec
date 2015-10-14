@@ -1,5 +1,5 @@
 package = "luakatsu"
-version = "2.3-1"
+version = "2.3-2"
 source = {
    url = "git://github.com/Nymphium/luakatsu.git",
    tag = "v2.3"
