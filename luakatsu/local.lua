@@ -10,8 +10,9 @@ _M.__call = function()
 end
 
 idols.groups = makemt(require("luakatsu/lib/groups")(idols))
-idols.find = require("luakatsu/bin/find")
-idols.version = "v2.3"
+idols.find_keyword = require("luakatsu/bin/find_keyword")
+idols.find_birthday = require("luakatsu/bin/find_birthday")
+idols.version = "v3.0"
 
 return setmetatable(idols, _M)
 

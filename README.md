@@ -1,4 +1,4 @@
-# luakatsu (Lua + Aikastu) v2.3
+# luakatsu (Lua + Aikastu) v3.0
 [Rubicure](https://github.com/sue445/rubicure) is **Ruby + Precure**, it is **Lua + [Aikastu](http://aikatsu.wikia.com/wiki/Aikatsu_Wiki)**
 
 ## install
@@ -29,11 +29,18 @@ $ lua
 > print(type(Aikatsu))
 table
 > print(Aikatsu.version)
-v2.2
+v3.0
 ```
 
 ### local table (`version >= v2.1-1`)
 `local luakatsu = require "luakatsu.local"`
+
+### `Aikatsu.find_birthday()` (`version >= v3.0-1`)
+
+```lua
+Aikatsu.find_birthday("12/03")
+--> returns Kii
+```
 
 ### profile
 
