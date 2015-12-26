@@ -158,7 +158,7 @@ return setmetatable({
 		tag(6, "美の追求", "情報収集", "新ブランドなどのニュース集め"),
 		tag(7, "ViVid Kiss"),
 		tag(8, 2),
-		tag(10, "みき"),
+		tag(10, "未来 みき"),
 		tag(11, "GOGO! いちご応援隊", "情熱★ハラペーニョ", "Luminas"),
 		tag(12, 1),
 	},
@@ -172,7 +172,7 @@ return setmetatable({
 		tag(7, "Sangria Rosa"),
 		tag(8, 3),
 		tag(9, {"Passion Flower"}),
-		tag(10, "みほ"),
+		tag(10, "天音 みほ"),
 		tag(11, "情熱★ハラペーニョ", "バニラチリペッパー"),
 		tag(12, 1),
 	},
@@ -186,7 +186,7 @@ return setmetatable({
 		tag(7, "Dance Fusion"),
 		tag(8, 4),
 		tag(9, {"MY SHOW TIME!"}),
-		tag(10, "ななせ"),
+		tag(10, "松岡 ななせ"),
 		tag(11, "Dancing Diva", "バニラチリペッパー"),
 		tag(12, 1),
 	},
@@ -200,7 +200,7 @@ return setmetatable({
 		tag(7, "Angely Sugar"),
 		tag(8, 1),
 		tag(9, {"ハローニューワールド"}),
-		tag(10, "かな"),
+		tag(10, "星咲 花那"),
 		tag(11, "Skips♪", "バニラチリペッパー"),
 		tag(12, 1),
 	},
@@ -305,7 +305,7 @@ return setmetatable({
 	},
 	{
 		tag(1, "栗栖 ここね"), name_rm = "Kokone",
-		tag(2, "伊藤かな恵"),
+		tag(2, "伊藤星咲 花那恵"),
 		tag(3, "08/21"),
 		tag(4, 1),
 		tag(5, "シャテーニュロール", "オムレツ"),
@@ -326,6 +326,8 @@ return setmetatable({
 		tag(6, "勉強", "編み物"),
 		tag(7, "Dollydevil"),
 		tag(8, 3),
+		tag(10, "松岡 ななせ"),
+		tag(12, 1),
 	},
 	{
 		tag(1, "大地 のの"), name_rm = "Nono",
@@ -336,7 +338,42 @@ return setmetatable({
 		tag(6, "カラオケ"),
 		tag(7, "Dollydevil"),
 		tag(8, 3),
+		tag(10, "天音 みほ"),
+		tag(12, 1),
+	},
+	{
+		tag(1, "堂島 ニーナ"), name_rm = "Nina",
+		tag(2, "矢野 亜沙美"),
+		tag(3, "02/07"),
+		tag(4, 4),
+		tag(5, "たこやき", "おこのみやき"),
+		tag(6, "おわらい", "絵を描くこと"),
+		tag(7, "Mecha PaniQ"),
+		tag(8, 2),
+		tag(10, "星咲 花那"),
+		tag(12, "なにわ天下一学苑"),
+	},
+	{
+		tag(1, "花輪 やよい"), name_rm = "Yayoi",
+		tag(2, "上田 麗奈"),
+		tag(3, "12/18"),
+		tag(4, 2),
+		tag(5, "おにぎり", "いぶりがっこ", "甘酒"),
+		tag(6, "太鼓"),
+		tag(7, "MAGICAL TOY"),
+		tag(8, 2),
+		tag(12, "小町女学院")
+	},
+	{
+		tag(1, "波照間 みなみ"), name_rm = "Minami",
+		tag(2, "藤田 茜"),
+		tag(3, "08/22"),
+		tag(4, 1),
+		tag(5, "ゴーヤチャンプルー", "ソーキそば"),
+		tag(6, "ダンス"),
+		tag(7, "Dance Fusion"),
+		tag(8, 4),
+		tag(12, "美ら海ビートアカデミー")
 	}
-}, {__mode = "k"}
-)
+}, {__mode = "k"})
 
