@@ -4,9 +4,7 @@ local prof_iter = function(prof)
 	return function()
 		pos = pos + 1
 
-		if not prof[pos] then return nil end
-
-		return prof[pos][1], prof[pos][2]
+		if prof[pos] then return prof[pos][1], prof[pos][2] end
 	end
 end
 

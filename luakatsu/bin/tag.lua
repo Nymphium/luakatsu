@@ -57,7 +57,7 @@ arg. ...: some argument
 				2: "B"
 				3: "O"
 				4: "AB"
-		9 (type):
+		8 (type):
 			arg:
 				1: "Cute"
 				2: "Pop"
@@ -77,63 +77,41 @@ local function tag(category, ...)
 		return {category, arg}
 	end
 
-	local tagname
+	local tagnames = {
+	--[[ 1.]]"name",
+	--[[ 2.]]"actor",
+	--[[ 3.]]"birthday",
+	--[[ 4.]]"blood_type",
+	--[[ 5.]]"favorite_foods",
+	--[[ 6.]]"special_ablity",
+	--[[ 7.]]"favorite_brand",
+	--[[ 8.]]"type",
+	--[[ 9.]]"signature_songs",
+	--[[10.]]"sing",
+	--[[11.]]"affilication",
+	--[[12.]]"school"
+	}
 
-	if category < 2 then
-		tagname = "name"
-	elseif category < 3 then
-		tagname = "actor"
-	elseif category < 4 then
-		return {"birthday", arg}, {"zodiac_sign", detect_zodiac(arg)}
-	elseif category < 5 then
-		tagname = "blood_type"
+	setmetatable(tagnames, {__index = function(t, k) return k end})
 
-		if arg < 2 then
-			arg = "A"
-		elseif arg < 3 then
-			arg = "B"
-		elseif arg < 4 then
-			arg = "O"
-		elseif arg < 5 then
-			arg = "AB"
-		end
-	elseif category < 6 then
-		tagname = "favorite_foods"
-	elseif category < 7 then
-		tagname = "special_ablity"
-	elseif category < 8 then
-		tagname = "favorite_brand"
-	elseif category < 9 then
-		tagname = "type"
+	local zodiac_sign
+	local blood_types = {"A", "B", "C", "D"}
+	local types = {"Cute", "Pop", "Sexy", "Cool"}
+	local schools = {"スターライト学園", "ドリーム･アカデミー"}
 
-		if arg < 2 then
-			arg = "Cute"
-		elseif arg < 3 then
-			arg = "Pop"
-		elseif arg < 4 then
-			arg = "Sexy"
-		elseif arg < 5 then
-			arg = "Cool"
-		end
-	elseif category < 10 then
-		tagname = "signature_songs"
-	elseif category < 11 then
-		tagname = "sing"
-	elseif category < 12 then
-		tagname = "affilication"
-	elseif category < 13 then
-		tagname = "school"
-
-		if type(arg) == "string" then
-			arg = arg
-		elseif arg < 2 then
-			arg = "スターライト学園"
-		elseif arg < 3 then
-			arg = "ドリーム･アカデミー"
+	if category == 3 then
+		zodiac_sign = {"zodiac_sign", detect_zodiac(arg)}
+	elseif category == 4 then
+		arg = blood_types[arg]
+	elseif category == 8 then
+		arg = types[arg]
+	elseif category == 12 then
+		if type(arg) == "number" then
+			arg = schools[arg]
 		end
 	end
 
-	return {tagname, arg}
+	return {tagnames[category], arg}, zodiac_sign
 end
 
 

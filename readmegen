@@ -57,7 +57,7 @@ lua -luakatsu -e "for m = 1, 12 do for d = 1, 31 do (function(x) return x and pr
 \`\`\`lua
 print(Aikatsu.Akari.name) ---> $(lua -luakatsu -e "print(Aikatsu.Akari.name)")
 
-print(table.concat(Aikastu.Akari.signature_songs), ', ') ---> $(lua -luakatsu -e "print(table.concat(Aikatsu.Akari.signature_songs, ', '))")
+print(type(Aikatsu.Akari.signature_songs) == 'table' and table.concat(Aikatsu.Akari.signature_songs, ', ') or Aikatsu.Akari.signature_songs) ---> $(lua -luakatsu -e "print(type(Aikatsu.Akari.signature_songs) == 'table' and table.concat(Aikatsu.Akari.signature_songs, ', ') or Aikatsu.Akari.signature_songs)")
 
 Aikatsu.Akari()
 

@@ -1,4 +1,4 @@
-# luakatsu (Lua + Aikastu) v3.0
+# luakatsu (Lua + Aikastu) v3.1
 [Rubicure](https://github.com/sue445/rubicure) is **Ruby + Precure**, it is **Lua + [Aikastu](http://aikatsu.wikia.com/wiki/Aikatsu_Wiki)**
 
 ## install
@@ -29,7 +29,7 @@ $ lua
 > print(type(Aikatsu))
 table
 > print(Aikatsu.version)
-v3.0
+v3.1
 ```
 
 ### local table (`version >= v2.1-1`)
@@ -42,12 +42,17 @@ Aikatsu.find_birthday("12/03")
 --> returns Kii
 ```
 
+#### one-liner
+```sh
+lua -luakatsu -e "for m = 1, 12 do for d = 1, 31 do (function(x) return x and print(x.name, x.birthday) end)(Aikatsu.find_birthday(([[%02d/%02d]]):format(m,d))) end end"
+```
+
 ### profile
 
 ```lua
 print(Aikatsu.Akari.name) ---> 大空 あかり
 
-print(table.concat(Aikastu.Akari.signature_songs), ', ') ---> Blooming♡Blooming
+print(type(Aikatsu.Akari.signature_songs) == 'table' and table.concat(Aikatsu.Akari.signature_songs, ', ') or Aikatsu.Akari.signature_songs) ---> Blooming♡Blooming
 
 Aikatsu.Akari()
 
@@ -62,7 +67,7 @@ favorite_brand	Dreamy Crown
 type	Cute
 signature_songs	Blooming♡Blooming
 sing	遠藤 瑠香
-affilication	GOGO! いちご応援隊, Skips♪, Luminas
+affilication	GOGO! いちご応援隊, Skips♪, Luminas, Luminas
 school	スターライト学園
 --]]
 
