@@ -1,4 +1,4 @@
-# luakatsu (Lua + Aikastu) v3.1
+# luakatsu (Lua + Aikastu) v4.0
 [Rubicure](https://github.com/sue445/rubicure) is **Ruby + Precure**, it is **Lua + [Aikastu](http://aikatsu.wikia.com/wiki/Aikatsu_Wiki)**
 
 ## install
@@ -29,22 +29,22 @@ $ lua
 > print(type(Aikatsu))
 table
 > print(Aikatsu.version)
-v3.1
+v4.0
 ```
 
 ### local table (`version >= v2.1-1`)
 `local luakatsu = require "luakatsu.local"`
 
-### `Aikatsu.find_birthday()` (`version >= v3.0-1`)
+### `Aikatsu:find_birthday()` (`version >= v3.0-1`)
 
 ```lua
-Aikatsu.find_birthday("12/03")
+Aikatsu:find_birthday("12/03")
 --> returns Kii
 ```
 
 #### one-liner
 ```sh
-lua -luakatsu -e "for m = 1, 12 do for d = 1, 31 do (function(x) return x and print(x.name, x.birthday) end)(Aikatsu.find_birthday(([[%02d/%02d]]):format(m,d))) end end"
+lua -luakatsu -e "for m = 1, 12 do for d = 1, 31 do (function(x) return x and print(x.name, x.birthday) end)(Aikatsu:find_birthday(([[%02d/%02d]]):format(m,d))) end end"
 ```
 
 ### profile
@@ -60,6 +60,7 @@ Aikatsu.Akari()
 name	大空 あかり
 actor	下地 柴野
 birthday	04/01
+zodiac_sign	Aries
 blood_type	A
 favorite_foods	スイカ, チョコレート, ドーナツ, みかん, カレー
 special_ablity	ものまね
