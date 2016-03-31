@@ -31,9 +31,16 @@ end
 local mkprofmt = function(prof)
 	local mt = {}
 
+	if prof[#prof][1] == "zodiac_sign" then
+		local b = table.remove(prof, #prof)
+		table.insert(prof, 3, b)
+		local z = table.remove(prof, #prof)
+		table.insert(prof, 3, z)
+	end
+
 	for key, val in prof_iter(prof) do
 		mt[key] = val
-		
+
 		if type(val) == "table" then
 			setmetatable(mt[key], {__call = function() printprof(val) end})
 		end

@@ -111,6 +111,10 @@ local function tag(category, ...)
 		end
 	end
 
+	--[[
+		X_X
+		birthday and zodiac_sign are inserted at the last, and `mkprofmt` in bin/makemt.lua move them to appropriate position
+	]]
 	return {tagnames[category], arg}, zodiac_sign
 end
 
