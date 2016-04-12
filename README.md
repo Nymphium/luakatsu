@@ -1,4 +1,4 @@
-# luakatsu (Lua + Aikastu) v4.0
+# luakatsu (Lua + Aikatsu) v4.0
 [Rubicure](https://github.com/sue445/rubicure) is **Ruby + Precure**, This is **Lua + [Aikastu](http://aikatsu.wikia.com/wiki/Aikatsu_Wiki)**
 
 ## install
