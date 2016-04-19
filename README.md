@@ -1,5 +1,5 @@
-# luakatsu (Lua + Aikastu) v4.0
-[Rubicure](https://github.com/sue445/rubicure) is **Ruby + Precure**, it is **Lua + [Aikastu](http://aikatsu.wikia.com/wiki/Aikatsu_Wiki)**
+# luakatsu (Lua + Aikatsu) v4.0
+[Rubicure](https://github.com/sue445/rubicure) is **Ruby + Precure**, This is **Lua + [Aikastu](http://aikatsu.wikia.com/wiki/Aikatsu_Wiki)**
 
 ## install
 `luarocks --local install luakatsu`
@@ -18,8 +18,7 @@ luarocks --local make
 
 
 ## compatibility
-after v1.3, non-idol characters' data is nothing here.
-	and catchphrase is not supported.
+After v1.3, non-idol characters' data are none here.  And catchphrases are not supported.
 
 ## usage
 ```
